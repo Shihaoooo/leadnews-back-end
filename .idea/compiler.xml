@@ -7,7 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
       </profile>
-      <profile name="Annotation profile for leadnews-utils" enabled="true">
+      <profile name="Annotation profile for leadnews" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -20,7 +20,7 @@
         <module name="leadnews-gateway" />
         <module name="leadnews-test" />
         <module name="leadnews-model" />
-        <module name="leadnews-service" />
+        <module name="leadnews-user" />
       </profile>
     </annotationProcessing>
   </component>
