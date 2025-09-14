@@ -19,6 +19,7 @@
         <option value="$PROJECT_DIR$/leadnews-service/pom.xml" />
         <option value="$PROJECT_DIR$/leadnews-test/pom.xml" />
         <option value="$PROJECT_DIR$/leadnews-utils/pom.xml" />
+        <option value="$PROJECT_DIR$/leadnews-service/leadnews-user/pom.xml" />
       </list>
     </option>
   </component>

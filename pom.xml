@@ -20,12 +20,17 @@
     <developers>
         <developer/>
     </developers>
+    <modules>
+        <module>leadnews-service/leadnews-user</module>
+        <module>leadnews-service/leadnews-user</module>
+    </modules>
     <scm>
         <connection/>
         <developerConnection/>
         <tag/>
         <url/>
     </scm>
+
     <properties>
         <java.version>17</java.version>
         <spring-cloud.version>2024.0.2</spring-cloud.version>
@@ -128,7 +133,7 @@
             <scope>test</scope>
         </dependency>
 
-
+        <!--mybatis起步依赖-->
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter-test</artifactId>
@@ -149,6 +154,8 @@
             <artifactId>spring-kafka-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+
     </dependencies>
 
 
@@ -195,6 +202,28 @@
             </plugin>
         </plugins>
     </build>
+
+    <repositories>
+        <!-- 阿里云公共仓库（优先，下载快） -->
+        <repository>
+            <id>aliyunmaven</id>
+            <url>https://maven.aliyun.com/repository/public</url>
+        </repository>
+        <!-- Spring 里程碑仓库（补充 Spring 系依赖） -->
+        <repository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/milestone</url>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <!-- 插件仓库（适配 Maven 插件下载） -->
+        <pluginRepository>
+            <id>aliyunmaven</id>
+            <url>https://maven.aliyun.com/repository/public</url>
+        </pluginRepository>
+    </pluginRepositories>
 
     <packaging>pom</packaging>
 
