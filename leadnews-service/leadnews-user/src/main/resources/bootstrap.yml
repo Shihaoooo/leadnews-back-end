@@ -1,5 +1,3 @@
-server:
-  port: 51801
 spring:
   application:
     name: leadnews-user
@@ -7,6 +5,11 @@ spring:
     nacos:
       discovery:
         server-addr: localhost:8848
+        username: nacos
+        password: nacos
+        service: leadnews-user
       config:
         server-addr: localhost:8848
-        file-extension: yml
+        username: nacos
+        password: nacos
+        file-extension: yaml

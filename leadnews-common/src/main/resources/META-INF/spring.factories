@@ -1,2 +1,4 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.nobody.leadnewscommon.Exception.ExceptionCatch
+  com.nobody.common.Exception.ExceptionCatch,\
+  com.nobody.common.swagger.SwaggerConfiguration,\
+  com.nobody.common.swagger.KnifeConfiguration

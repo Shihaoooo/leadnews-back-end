@@ -15,17 +15,21 @@
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
         </processorPath>
         <module name="leadnews-common" />
+        <module name="leadnews-user (1)" />
         <module name="leadnews-feign-api" />
-        <module name="leadnews-utils" />
         <module name="leadnews-gateway" />
         <module name="leadnews-test" />
         <module name="leadnews-model" />
-        <module name="leadnews-user" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="JWTUtils" target="17" />
+      <module name="leadnews" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="JWTUtils" options="-parameters" />
       <module name="leadnews" options="-parameters" />
       <module name="leadnews-common" options="-parameters" />
       <module name="leadnews-feign-api" options="-parameters" />
@@ -34,6 +38,7 @@
       <module name="leadnews-service" options="-parameters" />
       <module name="leadnews-test" options="-parameters" />
       <module name="leadnews-user" options="-parameters" />
+      <module name="leadnews-user (1)" options="-parameters" />
       <module name="leadnews-utils" options="-parameters" />
     </option>
   </component>

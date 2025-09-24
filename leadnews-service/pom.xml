@@ -45,6 +45,13 @@
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
+        <!--jwt工具类模块-->
+        <dependency>
+            <groupId>com.nobody</groupId>
+            <artifactId>leadnews-utils</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
         <!--远程调用模块-->
         <dependency>
             <groupId>com.nobody</groupId>
@@ -62,6 +69,11 @@
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bootstrap</artifactId>
         </dependency>
 
     </dependencies>
@@ -88,5 +100,9 @@
     </build>
 
     <packaging>pom</packaging>
+
+    <modules>
+        <module>leadnews-user</module>
+    </modules>
 
 </project>

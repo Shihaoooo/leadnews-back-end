@@ -1,8 +1,10 @@
-package com.nobody.leadnewsmodel.pojo;
+package com.nobody.model.enums;
 
 public enum AppHttpCodeEnum {
 
     // ========== 登录相关（示例：密码错误） ==========
+    SUCCESS(200, "操作成功"),
+    NEED_LOGIN(2, "未登录，请先登录"),
     LOGIN_PASSWORD_ERROR(2, "密码错误"),
 
     // ========== TOKEN 相关（50~100） ==========
@@ -45,7 +47,7 @@ public enum AppHttpCodeEnum {
         return code;
     }
 
-    public String getErrorMessage() {
+    public String getMessage() {
         return errorMessage;
     }
 }

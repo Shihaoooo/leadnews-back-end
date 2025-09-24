@@ -16,7 +16,9 @@
     <file url="file://$PROJECT_DIR$/leadnews-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/leadnews-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/leadnews-test/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/leadnews-utils/JWTUtils/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/leadnews-utils/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/leadnews-utils/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>
