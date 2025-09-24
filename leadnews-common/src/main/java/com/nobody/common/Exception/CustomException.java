@@ -1,7 +1,7 @@
-package com.nobody.leadnewscommon.Exception;
+package com.nobody.common.Exception;
 
 
-import com.nobody.leadnewsmodel.pojo.AppHttpCodeEnum;
+import com.nobody.model.enums.AppHttpCodeEnum;
 
 public class CustomException extends RuntimeException {
 

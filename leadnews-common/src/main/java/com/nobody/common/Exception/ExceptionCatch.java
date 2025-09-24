@@ -1,7 +1,7 @@
-package com.nobody.leadnewscommon.Exception;
+package com.nobody.common.Exception;
 
-import com.nobody.leadnewsmodel.pojo.AppHttpCodeEnum;
-import com.nobody.leadnewsmodel.pojo.Result;
+import com.nobody.model.enums.AppHttpCodeEnum;
+import com.nobody.model.dtos.Result;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
