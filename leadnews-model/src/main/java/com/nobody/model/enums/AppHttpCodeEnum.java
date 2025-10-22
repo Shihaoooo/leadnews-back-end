@@ -1,11 +1,14 @@
 package com.nobody.model.enums;
 
+import lombok.Getter;
+
 public enum AppHttpCodeEnum {
 
     // ========== 登录相关（示例：密码错误） ==========
     SUCCESS(200, "操作成功"),
     NEED_LOGIN(2, "未登录，请先登录"),
-    LOGIN_PASSWORD_ERROR(2, "密码错误"),
+    LOGIN_PASSWORD_ERROR(3, "密码错误"),
+    DUPLICATE_ACCOUNT(4,"手机号已注册"),
 
     // ========== TOKEN 相关（50~100） ==========
     TOKEN_INVALID(50, "无效的TOKEN"),
@@ -31,7 +34,9 @@ public enum AppHttpCodeEnum {
     NO_OPERATOR_AUTH(3000, "无权限操作"),
     NEED_ADMINID(3001, "需要管理员权限");
 
+    // ---------- Getter 方法 ----------
     // ---------- 枚举属性 ----------
+    @Getter
     private int code;           // 错误码
     private String errorMessage; // 错误描述
 
@@ -40,11 +45,6 @@ public enum AppHttpCodeEnum {
     AppHttpCodeEnum(int code, String errorMessage) {
         this.code = code;
         this.errorMessage = errorMessage;
-    }
-
-    // ---------- Getter 方法 ----------
-    public int getCode() {
-        return code;
     }
 
     public String getMessage() {
