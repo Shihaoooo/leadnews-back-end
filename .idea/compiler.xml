@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -14,23 +15,44 @@
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
         </processorPath>
-        <module name="leadnews-common" />
         <module name="leadnews-user (1)" />
+        <module name="leadnews-common" />
         <module name="leadnews-feign-api" />
-        <module name="leadnews-gateway" />
-        <module name="leadnews-test" />
         <module name="leadnews-model" />
+        <module name="leadnews-test" />
+        <module name="leadnews-article" />
+        <module name="leadnews-user" />
+      </profile>
+      <profile name="Annotation profile for leadnews-gateway" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
+        </processorPath>
+        <module name="leadnews-gateway" />
+      </profile>
+      <profile name="Annotation profile for leadnews-utils" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
+        </processorPath>
+        <module name="leadnews-utils" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="JWTUtils" target="17" />
-      <module name="leadnews" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="JWTUtils" options="-parameters" />
       <module name="leadnews" options="-parameters" />
+      <module name="leadnews-article" options="-parameters" />
       <module name="leadnews-common" options="-parameters" />
       <module name="leadnews-feign-api" options="-parameters" />
       <module name="leadnews-gateway" options="-parameters" />

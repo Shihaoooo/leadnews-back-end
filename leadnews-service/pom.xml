@@ -31,6 +31,20 @@
         <spring-cloud-alibaba.version>2023.0.1.0</spring-cloud-alibaba.version>
     </properties>
     <dependencies>
+
+        <!--springboot-web起步依赖-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- PageHelper分页插件与Spring Boot集成：简化MyBatis的分页查询实现 -->
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper-spring-boot-starter</artifactId>
+            <version>1.4.7</version>
+        </dependency>
+
         <!--common模块-->
         <dependency>
             <groupId>com.nobody</groupId>
@@ -76,6 +90,19 @@
             <artifactId>spring-cloud-starter-bootstrap</artifactId>
         </dependency>
 
+        <!-- Logback日志框架核心包：日志系统的基础核心依赖 -->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
+            <version>1.5.13</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>3.0.5</version>
+        </dependency>
+
     </dependencies>
 
     <dependencyManagement>
@@ -103,6 +130,7 @@
 
     <modules>
         <module>leadnews-user</module>
+        <module>leadnews-article</module>
     </modules>
 
 </project>

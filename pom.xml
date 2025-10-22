@@ -28,6 +28,7 @@
         <module>leadnews-feign-api</module>
         <module>leadnews-utils</module>
         <module>leadnews-test</module>
+        <module>leadnews-service/leadnews-article</module>
     </modules>
     <scm>
         <connection/>
@@ -39,48 +40,10 @@
     <properties>
         <java.version>17</java.version>
         <spring-cloud.version>2024.0.2</spring-cloud.version>
+        <spring-cloud-alibaba.version>2023.0.1.0</spring-cloud-alibaba.version>
     </properties>
     <dependencies>
 
-        <!-- PageHelper分页插件与Spring Boot集成：简化MyBatis的分页查询实现 -->
-        <dependency>
-            <groupId>com.github.pagehelper</groupId>
-            <artifactId>pagehelper-spring-boot-starter</artifactId>
-            <version>1.4.7</version>
-        </dependency>
-
-        <!-- Logback日志框架核心包：日志系统的基础核心依赖 -->
-        <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-core</artifactId>
-            <version>1.5.13</version>
-        </dependency>
-
-        <!--springboot-web起步依赖-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <!--kafka stream-->
-        <dependency>
-            <groupId>org.apache.kafka</groupId>
-            <artifactId>kafka-streams</artifactId>
-        </dependency>
-
-
-
-        <!--rabbitMQ stream-->
-        <dependency>
-            <groupId>org.springframework.amqp</groupId>
-            <artifactId>spring-rabbit-stream</artifactId>
-        </dependency>
-
-        <!--RabbitMQ起步依赖-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-amqp</artifactId>
-        </dependency>
 
         <!--微服务起步依赖-->
         <dependency>
@@ -88,11 +51,6 @@
             <artifactId>spring-cloud-starter</artifactId>
         </dependency>
 
-        <!--gateway网关-->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-gateway-mvc</artifactId>
-        </dependency>
 
         <!--负载均衡-->
         <dependency>
@@ -104,12 +62,6 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
-        </dependency>
-
-        <!--kafka-->
-        <dependency>
-            <groupId>org.springframework.kafka</groupId>
-            <artifactId>spring-kafka</artifactId>
         </dependency>
 
         <dependency>
@@ -130,10 +82,7 @@
             <artifactId>spring-kafka-test</artifactId>
             <scope>test</scope>
         </dependency>
-
-
     </dependencies>
-
 
     <dependencyManagement>
         <dependencies>

@@ -5,13 +5,6 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/../leadnews/leadnews-common/pom.xml" />
-        <option value="$PROJECT_DIR$/../leadnews/leadnews-feign-api/pom.xml" />
-        <option value="$PROJECT_DIR$/../leadnews/leadnews-gateway/pom.xml" />
-        <option value="$PROJECT_DIR$/../leadnews/leadnews-model/pom.xml" />
-        <option value="$PROJECT_DIR$/../leadnews/leadnews-service/pom.xml" />
-        <option value="$PROJECT_DIR$/../leadnews/leadnews-test/pom.xml" />
-        <option value="$PROJECT_DIR$/../leadnews/leadnews-utils/pom.xml" />
         <option value="$PROJECT_DIR$/leadnews-common/pom.xml" />
         <option value="$PROJECT_DIR$/leadnews-feign-api/pom.xml" />
         <option value="$PROJECT_DIR$/leadnews-gateway/pom.xml" />
@@ -20,6 +13,7 @@
         <option value="$PROJECT_DIR$/leadnews-test/pom.xml" />
         <option value="$PROJECT_DIR$/leadnews-utils/pom.xml" />
         <option value="$PROJECT_DIR$/leadnews-service/leadnews-user/pom.xml" />
+        <option value="$PROJECT_DIR$/leadnews-service/leadnews-article/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
