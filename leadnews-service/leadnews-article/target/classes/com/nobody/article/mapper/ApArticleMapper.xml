@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nobody.article.mapper.ApArticleMapper">
+    <select id="loadArticleList" resultType="com.nobody.model.pojos.ApArticle">
+        select aa.* from ap_article.aa
+        left join ap_article_config aac on aa.id == aac.article_id
+        <where>
+            and aac.is_delete != 1
+            and aac.is_down != 1
+            <if test="type != null and type != 1">
+                and aa.publish_time <![CDATA[<]]> #{dto.minBehotTime}
+            </if>
+
+            <if test="type != null and type != 2">
+                and aa.publish_time <![CDATA[>]]> #{dto.maxBehotTime}
+            </if>
+
+            <if test="dto.tag != '__all__'">
+                and aa.channel_id = #{dto.tag}  <!--没有频道信息(全部加载)-->
+            </if>
+        </where>
+        order by aa.publish_time desc
+        limit #{dto.size}
+    </select>
+</mapper>
