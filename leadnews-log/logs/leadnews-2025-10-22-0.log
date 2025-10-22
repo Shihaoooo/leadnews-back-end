@@ -1,0 +1,1134 @@
+2025-10-22 16:58:36.102 [main] INFO  com.alibaba.nacos.client.utils.ParamUtil - [settings] [req-serv] nacos-server port:8848
+2025-10-22 16:58:36.104 [main] INFO  com.alibaba.nacos.client.utils.ParamUtil - [settings] [http-client] connect timeout:1000
+2025-10-22 16:58:36.104 [main] INFO  com.alibaba.nacos.client.utils.ParamUtil - PER_TASK_CONFIG_SIZE: 3000.0
+2025-10-22 16:58:36.117 [main] INFO  com.alibaba.nacos.common.labels - DefaultLabelsCollectorManager get labels.....
+2025-10-22 16:58:36.117 [main] INFO  com.alibaba.nacos.common.labels - Process LabelsCollector with [name:defaultNacosLabelsCollector]
+2025-10-22 16:58:36.117 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect properties raw labels: null
+2025-10-22 16:58:36.118 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect properties labels: {}
+2025-10-22 16:58:36.118 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect jvm raw labels: null
+2025-10-22 16:58:36.118 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect jvm labels: {}
+2025-10-22 16:58:36.118 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect env raw labels: null
+2025-10-22 16:58:36.118 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect env labels: {}
+2025-10-22 16:58:36.118 [main] INFO  com.alibaba.nacos.common.labels - DefaultLabelsCollectorManager get labels finished,labels :{}
+2025-10-22 16:58:36.121 [Thread-1] INFO  c.a.n.client.auth.ram.identify.CredentialWatcher - null No credential found
+2025-10-22 16:58:36.122 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-10-22 16:58:36.122 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-10-22 16:58:36.143 [main] INFO  com.alibaba.nacos.client.config.impl.Limiter - limitTime:5.0
+2025-10-22 16:58:36.373 [main] INFO  c.a.n.client.config.impl.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:/Users/zhoushihao/nacos/config
+2025-10-22 16:58:36.376 [main] INFO  com.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of 729259db-e516-4815-b796-0ef4fc2c0c58_config-0
+2025-10-22 16:58:36.389 [main] INFO  com.alibaba.nacos.common.remote.client - [729259db-e516-4815-b796-0ef4fc2c0c58_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$721/0x000000c0013bdc78
+2025-10-22 16:58:36.389 [main] INFO  com.alibaba.nacos.common.remote.client - [729259db-e516-4815-b796-0ef4fc2c0c58_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$722/0x000000c0013be0a8
+2025-10-22 16:58:36.390 [main] INFO  com.alibaba.nacos.common.remote.client - [729259db-e516-4815-b796-0ef4fc2c0c58_config-0] Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2025-10-22 16:58:36.390 [main] INFO  com.alibaba.nacos.common.remote.client - [729259db-e516-4815-b796-0ef4fc2c0c58_config-0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2025-10-22 16:58:36.394 [main] INFO  com.alibaba.nacos.common.remote.client - [729259db-e516-4815-b796-0ef4fc2c0c58_config-0] Try to connect to server on start up, server: {serverIp = 'localhost', server main port = 8848}
+2025-10-22 16:58:36.406 [main] INFO  c.a.nacos.common.remote.client.grpc.GrpcClient - grpc client connection server:localhost ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2025-10-22 16:58:36.741 [main] INFO  c.a.n.common.ability.AbstractAbilityControlManager - Ready to get current node abilities...
+2025-10-22 16:58:36.742 [main] INFO  c.a.n.common.ability.AbstractAbilityControlManager - Ready to initialize current node abilities, support modes: [SDK_CLIENT]
+2025-10-22 16:58:36.743 [main] INFO  c.a.n.common.ability.AbstractAbilityControlManager - Initialize current abilities finish...
+2025-10-22 16:58:36.743 [main] INFO  c.a.n.c.ability.discover.NacosAbilityManagerHolder - [AbilityControlManager] Successfully initialize AbilityControlManager
+2025-10-22 16:58:36.756 [main] INFO  com.alibaba.nacos.common.remote.client - [729259db-e516-4815-b796-0ef4fc2c0c58_config-0] Success to connect to server [localhost:8848] on start up, connectionId = 1761123516689_127.0.0.1_59402
+2025-10-22 16:58:36.756 [com.alibaba.nacos.client.remote.worker.0] INFO  com.alibaba.nacos.common.remote.client - [729259db-e516-4815-b796-0ef4fc2c0c58_config-0] Notify connected event to listeners.
+2025-10-22 16:58:36.756 [com.alibaba.nacos.client.remote.worker.0] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [729259db-e516-4815-b796-0ef4fc2c0c58_config-0] Connected,notify listen context...
+2025-10-22 16:58:36.756 [main] INFO  com.alibaba.nacos.common.remote.client - [729259db-e516-4815-b796-0ef4fc2c0c58_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2025-10-22 16:58:36.757 [main] INFO  com.alibaba.nacos.common.remote.client - [729259db-e516-4815-b796-0ef4fc2c0c58_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$739/0x000000c001515258
+2025-10-22 16:58:36.788 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[leadnews-article] & group[DEFAULT_GROUP]
+2025-10-22 16:58:36.794 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[leadnews-article.yaml] & group[DEFAULT_GROUP]
+2025-10-22 16:58:36.801 [main] INFO  com.alibaba.nacos.client.config.utils.JvmUtil - isMultiInstance:false
+2025-10-22 16:58:36.804 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-leadnews-article-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-leadnews-article.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-leadnews-article,DEFAULT_GROUP'}]
+2025-10-22 16:58:36.808 [main] INFO  com.nobody.article.LeadnewsArticleApplication - The following 1 profile is active: "dev"
+2025-10-22 16:58:37.249 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=76d79f59-6c04-326b-a87e-c58203a51803
+2025-10-22 16:58:37.489 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-10-22 16:58:37.499 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-10-22 16:58:37.499 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-22 16:58:37.500 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-10-22 16:58:37.534 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-22 16:58:37.534 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 718 ms
+2025-10-22 16:58:37.574 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articleController' defined in file [/Users/zhoushihao/IdeaProjects/leadnews/leadnews-service/leadnews-article/target/classes/com/nobody/article/controller/ArticleController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'apArticleServiceImpl' defined in file [/Users/zhoushihao/IdeaProjects/leadnews/leadnews-service/leadnews-article/target/classes/com/nobody/article/sevice/impl/ApArticleServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'apArticleMapper' defined in file [/Users/zhoushihao/IdeaProjects/leadnews/leadnews-service/leadnews-article/target/classes/com/nobody/article/mapper/ApArticleMapper.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'
+2025-10-22 16:58:37.575 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2025-10-22 16:58:37.589 [main] INFO  o.s.b.a.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-22 16:58:37.599 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (the profiles dev are currently active).
+
+2025-10-22 16:58:37.599 [Thread-2] WARN  c.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2025-10-22 16:58:37.599 [Thread-5] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2025-10-22 16:58:37.599 [Thread-5] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2025-10-22 16:58:37.599 [Thread-2] WARN  c.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2025-10-22 17:02:52.173 [main] INFO  com.alibaba.nacos.client.utils.ParamUtil - [settings] [req-serv] nacos-server port:8848
+2025-10-22 17:02:52.174 [main] INFO  com.alibaba.nacos.client.utils.ParamUtil - [settings] [http-client] connect timeout:1000
+2025-10-22 17:02:52.175 [main] INFO  com.alibaba.nacos.client.utils.ParamUtil - PER_TASK_CONFIG_SIZE: 3000.0
+2025-10-22 17:02:52.190 [main] INFO  com.alibaba.nacos.common.labels - DefaultLabelsCollectorManager get labels.....
+2025-10-22 17:02:52.190 [main] INFO  com.alibaba.nacos.common.labels - Process LabelsCollector with [name:defaultNacosLabelsCollector]
+2025-10-22 17:02:52.190 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect properties raw labels: null
+2025-10-22 17:02:52.190 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect properties labels: {}
+2025-10-22 17:02:52.191 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect jvm raw labels: null
+2025-10-22 17:02:52.191 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect jvm labels: {}
+2025-10-22 17:02:52.191 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect env raw labels: null
+2025-10-22 17:02:52.191 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect env labels: {}
+2025-10-22 17:02:52.191 [main] INFO  com.alibaba.nacos.common.labels - DefaultLabelsCollectorManager get labels finished,labels :{}
+2025-10-22 17:02:52.193 [Thread-1] INFO  c.a.n.client.auth.ram.identify.CredentialWatcher - null No credential found
+2025-10-22 17:02:52.195 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-10-22 17:02:52.195 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-10-22 17:02:52.216 [main] INFO  com.alibaba.nacos.client.config.impl.Limiter - limitTime:5.0
+2025-10-22 17:02:52.454 [main] INFO  c.a.n.client.config.impl.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:/Users/zhoushihao/nacos/config
+2025-10-22 17:02:52.456 [main] INFO  com.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of 6517185c-7bd2-412b-a5f6-eea725dd9152_config-0
+2025-10-22 17:02:52.472 [main] INFO  com.alibaba.nacos.common.remote.client - [6517185c-7bd2-412b-a5f6-eea725dd9152_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$720/0x00000078013bb908
+2025-10-22 17:02:52.472 [main] INFO  com.alibaba.nacos.common.remote.client - [6517185c-7bd2-412b-a5f6-eea725dd9152_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$721/0x00000078013bbd38
+2025-10-22 17:02:52.472 [main] INFO  com.alibaba.nacos.common.remote.client - [6517185c-7bd2-412b-a5f6-eea725dd9152_config-0] Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2025-10-22 17:02:52.473 [main] INFO  com.alibaba.nacos.common.remote.client - [6517185c-7bd2-412b-a5f6-eea725dd9152_config-0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2025-10-22 17:02:52.476 [main] INFO  com.alibaba.nacos.common.remote.client - [6517185c-7bd2-412b-a5f6-eea725dd9152_config-0] Try to connect to server on start up, server: {serverIp = 'localhost', server main port = 8848}
+2025-10-22 17:02:52.488 [main] INFO  c.a.nacos.common.remote.client.grpc.GrpcClient - grpc client connection server:localhost ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2025-10-22 17:02:52.845 [main] INFO  c.a.n.common.ability.AbstractAbilityControlManager - Ready to get current node abilities...
+2025-10-22 17:02:52.846 [main] INFO  c.a.n.common.ability.AbstractAbilityControlManager - Ready to initialize current node abilities, support modes: [SDK_CLIENT]
+2025-10-22 17:02:52.847 [main] INFO  c.a.n.common.ability.AbstractAbilityControlManager - Initialize current abilities finish...
+2025-10-22 17:02:52.847 [main] INFO  c.a.n.c.ability.discover.NacosAbilityManagerHolder - [AbilityControlManager] Successfully initialize AbilityControlManager
+2025-10-22 17:02:52.862 [main] INFO  com.alibaba.nacos.common.remote.client - [6517185c-7bd2-412b-a5f6-eea725dd9152_config-0] Success to connect to server [localhost:8848] on start up, connectionId = 1761123772785_127.0.0.1_59742
+2025-10-22 17:02:52.863 [com.alibaba.nacos.client.remote.worker.0] INFO  com.alibaba.nacos.common.remote.client - [6517185c-7bd2-412b-a5f6-eea725dd9152_config-0] Notify connected event to listeners.
+2025-10-22 17:02:52.863 [main] INFO  com.alibaba.nacos.common.remote.client - [6517185c-7bd2-412b-a5f6-eea725dd9152_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2025-10-22 17:02:52.863 [com.alibaba.nacos.client.remote.worker.0] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [6517185c-7bd2-412b-a5f6-eea725dd9152_config-0] Connected,notify listen context...
+2025-10-22 17:02:52.863 [main] INFO  com.alibaba.nacos.common.remote.client - [6517185c-7bd2-412b-a5f6-eea725dd9152_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$738/0x0000007801512bf8
+2025-10-22 17:02:52.896 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[leadnews-article] & group[DEFAULT_GROUP]
+2025-10-22 17:02:52.903 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[leadnews-article.yaml] & group[DEFAULT_GROUP]
+2025-10-22 17:02:52.911 [main] INFO  com.alibaba.nacos.client.config.utils.JvmUtil - isMultiInstance:false
+2025-10-22 17:02:52.914 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-leadnews-article-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-leadnews-article.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-leadnews-article,DEFAULT_GROUP'}]
+2025-10-22 17:02:52.918 [main] INFO  com.nobody.article.LeadnewsArticleApplication - The following 1 profile is active: "dev"
+2025-10-22 17:02:53.398 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=76d79f59-6c04-326b-a87e-c58203a51803
+2025-10-22 17:02:53.637 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-10-22 17:02:53.646 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-10-22 17:02:53.648 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-22 17:02:53.648 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-10-22 17:02:53.686 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-22 17:02:53.686 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 759 ms
+2025-10-22 17:02:53.730 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articleController' defined in file [/Users/zhoushihao/IdeaProjects/leadnews/leadnews-service/leadnews-article/target/classes/com/nobody/article/controller/ArticleController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'apArticleServiceImpl' defined in file [/Users/zhoushihao/IdeaProjects/leadnews/leadnews-service/leadnews-article/target/classes/com/nobody/article/sevice/impl/ApArticleServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'apArticleMapper' defined in file [/Users/zhoushihao/IdeaProjects/leadnews/leadnews-service/leadnews-article/target/classes/com/nobody/article/mapper/ApArticleMapper.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'
+2025-10-22 17:02:53.731 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2025-10-22 17:02:53.745 [main] INFO  o.s.b.a.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-22 17:02:53.756 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (the profiles dev are currently active).
+
+2025-10-22 17:02:53.757 [Thread-2] WARN  c.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2025-10-22 17:02:53.757 [Thread-5] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2025-10-22 17:06:23.158 [main] INFO  com.alibaba.nacos.client.utils.ParamUtil - [settings] [req-serv] nacos-server port:8848
+2025-10-22 17:06:23.160 [main] INFO  com.alibaba.nacos.client.utils.ParamUtil - [settings] [http-client] connect timeout:1000
+2025-10-22 17:06:23.161 [main] INFO  com.alibaba.nacos.client.utils.ParamUtil - PER_TASK_CONFIG_SIZE: 3000.0
+2025-10-22 17:06:23.173 [main] INFO  com.alibaba.nacos.common.labels - DefaultLabelsCollectorManager get labels.....
+2025-10-22 17:06:23.174 [main] INFO  com.alibaba.nacos.common.labels - Process LabelsCollector with [name:defaultNacosLabelsCollector]
+2025-10-22 17:06:23.174 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect properties raw labels: null
+2025-10-22 17:06:23.174 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect properties labels: {}
+2025-10-22 17:06:23.174 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect jvm raw labels: null
+2025-10-22 17:06:23.174 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect jvm labels: {}
+2025-10-22 17:06:23.174 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect env raw labels: null
+2025-10-22 17:06:23.174 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect env labels: {}
+2025-10-22 17:06:23.175 [main] INFO  com.alibaba.nacos.common.labels - DefaultLabelsCollectorManager get labels finished,labels :{}
+2025-10-22 17:06:23.178 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-10-22 17:06:23.179 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-10-22 17:06:23.179 [Thread-1] INFO  c.a.n.client.auth.ram.identify.CredentialWatcher - null No credential found
+2025-10-22 17:06:23.200 [main] INFO  com.alibaba.nacos.client.config.impl.Limiter - limitTime:5.0
+2025-10-22 17:06:23.425 [main] INFO  c.a.n.client.config.impl.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:/Users/zhoushihao/nacos/config
+2025-10-22 17:06:23.427 [main] INFO  com.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of 59e1afd0-4757-45f7-b2ec-2834c6678427_config-0
+2025-10-22 17:06:23.443 [main] INFO  com.alibaba.nacos.common.remote.client - [59e1afd0-4757-45f7-b2ec-2834c6678427_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$720/0x000000c8013bc610
+2025-10-22 17:06:23.444 [main] INFO  com.alibaba.nacos.common.remote.client - [59e1afd0-4757-45f7-b2ec-2834c6678427_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$721/0x000000c8013bca40
+2025-10-22 17:06:23.444 [main] INFO  com.alibaba.nacos.common.remote.client - [59e1afd0-4757-45f7-b2ec-2834c6678427_config-0] Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2025-10-22 17:06:23.444 [main] INFO  com.alibaba.nacos.common.remote.client - [59e1afd0-4757-45f7-b2ec-2834c6678427_config-0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2025-10-22 17:06:23.448 [main] INFO  com.alibaba.nacos.common.remote.client - [59e1afd0-4757-45f7-b2ec-2834c6678427_config-0] Try to connect to server on start up, server: {serverIp = 'localhost', server main port = 8848}
+2025-10-22 17:06:23.460 [main] INFO  c.a.nacos.common.remote.client.grpc.GrpcClient - grpc client connection server:localhost ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2025-10-22 17:06:23.790 [main] INFO  c.a.n.common.ability.AbstractAbilityControlManager - Ready to get current node abilities...
+2025-10-22 17:06:23.791 [main] INFO  c.a.n.common.ability.AbstractAbilityControlManager - Ready to initialize current node abilities, support modes: [SDK_CLIENT]
+2025-10-22 17:06:23.792 [main] INFO  c.a.n.common.ability.AbstractAbilityControlManager - Initialize current abilities finish...
+2025-10-22 17:06:23.792 [main] INFO  c.a.n.c.ability.discover.NacosAbilityManagerHolder - [AbilityControlManager] Successfully initialize AbilityControlManager
+2025-10-22 17:06:23.804 [main] INFO  com.alibaba.nacos.common.remote.client - [59e1afd0-4757-45f7-b2ec-2834c6678427_config-0] Success to connect to server [localhost:8848] on start up, connectionId = 1761123983737_127.0.0.1_60009
+2025-10-22 17:06:23.804 [com.alibaba.nacos.client.remote.worker.0] INFO  com.alibaba.nacos.common.remote.client - [59e1afd0-4757-45f7-b2ec-2834c6678427_config-0] Notify connected event to listeners.
+2025-10-22 17:06:23.805 [com.alibaba.nacos.client.remote.worker.0] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [59e1afd0-4757-45f7-b2ec-2834c6678427_config-0] Connected,notify listen context...
+2025-10-22 17:06:23.805 [main] INFO  com.alibaba.nacos.common.remote.client - [59e1afd0-4757-45f7-b2ec-2834c6678427_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2025-10-22 17:06:23.805 [main] INFO  com.alibaba.nacos.common.remote.client - [59e1afd0-4757-45f7-b2ec-2834c6678427_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$738/0x000000c801513728
+2025-10-22 17:06:23.836 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[leadnews-article] & group[DEFAULT_GROUP]
+2025-10-22 17:06:23.842 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[leadnews-article.yaml] & group[DEFAULT_GROUP]
+2025-10-22 17:06:23.849 [main] INFO  com.alibaba.nacos.client.config.utils.JvmUtil - isMultiInstance:false
+2025-10-22 17:06:23.852 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-leadnews-article-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-leadnews-article.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-leadnews-article,DEFAULT_GROUP'}]
+2025-10-22 17:06:23.855 [main] INFO  com.nobody.article.LeadnewsArticleApplication - The following 1 profile is active: "dev"
+2025-10-22 17:06:24.298 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=76d79f59-6c04-326b-a87e-c58203a51803
+2025-10-22 17:06:24.549 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-10-22 17:06:24.558 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-10-22 17:06:24.559 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-22 17:06:24.559 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-10-22 17:06:24.595 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-22 17:06:24.595 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 731 ms
+2025-10-22 17:06:24.714 [main] ERROR org.mybatis.spring.mapper.MapperFactoryBean - Error while adding the mapper 'interface com.nobody.article.mapper.ApArticleMapper' to configuration.
+org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 58; 文档根元素 "mapper" 必须匹配 DOCTYPE 根 "null"。
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:262)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:127)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:83)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:77)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.loadXmlResource(MapperAnnotationBuilder.java:163)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parse(MapperAnnotationBuilder.java:117)
+	at org.apache.ibatis.binding.MapperRegistry.addMapper(MapperRegistry.java:72)
+	at org.apache.ibatis.session.Configuration.addMapper(Configuration.java:943)
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:76)
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1690)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1635)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1752)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1635)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1188)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.nobody.article.LeadnewsArticleApplication.main(LeadnewsArticleApplication.java:12)
+Caused by: org.xml.sax.SAXParseException: 文档根元素 "mapper" 必须匹配 DOCTYPE 根 "null"。
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:135)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.rootElementSpecified(XMLDTDValidator.java:1539)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleStartElement(XMLDTDValidator.java:1806)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.startElement(XMLDTDValidator.java:728)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1407)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$ContentDriver.scanRootElementHook(XMLDocumentScannerImpl.java:1292)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:3079)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:836)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:260)
+	... 56 common frames omitted
+2025-10-22 17:06:24.717 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articleController' defined in file [/Users/zhoushihao/IdeaProjects/leadnews/leadnews-service/leadnews-article/target/classes/com/nobody/article/controller/ArticleController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'apArticleServiceImpl' defined in file [/Users/zhoushihao/IdeaProjects/leadnews/leadnews-service/leadnews-article/target/classes/com/nobody/article/sevice/impl/ApArticleServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'apArticleMapper' defined in file [/Users/zhoushihao/IdeaProjects/leadnews/leadnews-service/leadnews-article/target/classes/com/nobody/article/mapper/ApArticleMapper.class]: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 58; 文档根元素 "mapper" 必须匹配 DOCTYPE 根 "null"。
+2025-10-22 17:06:24.718 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2025-10-22 17:06:24.730 [main] INFO  o.s.b.a.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-22 17:06:24.741 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articleController' defined in file [/Users/zhoushihao/IdeaProjects/leadnews/leadnews-service/leadnews-article/target/classes/com/nobody/article/controller/ArticleController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'apArticleServiceImpl' defined in file [/Users/zhoushihao/IdeaProjects/leadnews/leadnews-service/leadnews-article/target/classes/com/nobody/article/sevice/impl/ApArticleServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'apArticleMapper' defined in file [/Users/zhoushihao/IdeaProjects/leadnews/leadnews-service/leadnews-article/target/classes/com/nobody/article/mapper/ApArticleMapper.class]: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 58; 文档根元素 "mapper" 必须匹配 DOCTYPE 根 "null"。
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1188)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.nobody.article.LeadnewsArticleApplication.main(LeadnewsArticleApplication.java:12)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apArticleServiceImpl' defined in file [/Users/zhoushihao/IdeaProjects/leadnews/leadnews-service/leadnews-article/target/classes/com/nobody/article/sevice/impl/ApArticleServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'apArticleMapper' defined in file [/Users/zhoushihao/IdeaProjects/leadnews/leadnews-service/leadnews-article/target/classes/com/nobody/article/mapper/ApArticleMapper.class]: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 58; 文档根元素 "mapper" 必须匹配 DOCTYPE 根 "null"。
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1752)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1635)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 21 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'apArticleMapper' defined in file [/Users/zhoushihao/IdeaProjects/leadnews/leadnews-service/leadnews-article/target/classes/com/nobody/article/mapper/ApArticleMapper.class]: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 58; 文档根元素 "mapper" 必须匹配 DOCTYPE 根 "null"。
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1690)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1635)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 35 common frames omitted
+Caused by: java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 58; 文档根元素 "mapper" 必须匹配 DOCTYPE 根 "null"。
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:79)
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822)
+	... 45 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 58; 文档根元素 "mapper" 必须匹配 DOCTYPE 根 "null"。
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:262)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:127)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:83)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:77)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.loadXmlResource(MapperAnnotationBuilder.java:163)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parse(MapperAnnotationBuilder.java:117)
+	at org.apache.ibatis.binding.MapperRegistry.addMapper(MapperRegistry.java:72)
+	at org.apache.ibatis.session.Configuration.addMapper(Configuration.java:943)
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:76)
+	... 48 common frames omitted
+Caused by: org.xml.sax.SAXParseException: 文档根元素 "mapper" 必须匹配 DOCTYPE 根 "null"。
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:135)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.rootElementSpecified(XMLDTDValidator.java:1539)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleStartElement(XMLDTDValidator.java:1806)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.startElement(XMLDTDValidator.java:728)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1407)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$ContentDriver.scanRootElementHook(XMLDocumentScannerImpl.java:1292)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:3079)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:836)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:260)
+	... 56 common frames omitted
+2025-10-22 17:06:24.744 [Thread-2] WARN  c.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2025-10-22 17:06:24.744 [Thread-5] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2025-10-22 17:06:24.744 [Thread-5] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2025-10-22 17:06:24.744 [Thread-2] WARN  c.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2025-10-22 17:13:50.205 [main] INFO  com.alibaba.nacos.client.utils.ParamUtil - [settings] [req-serv] nacos-server port:8848
+2025-10-22 17:13:50.207 [main] INFO  com.alibaba.nacos.client.utils.ParamUtil - [settings] [http-client] connect timeout:1000
+2025-10-22 17:13:50.208 [main] INFO  com.alibaba.nacos.client.utils.ParamUtil - PER_TASK_CONFIG_SIZE: 3000.0
+2025-10-22 17:13:50.222 [main] INFO  com.alibaba.nacos.common.labels - DefaultLabelsCollectorManager get labels.....
+2025-10-22 17:13:50.222 [main] INFO  com.alibaba.nacos.common.labels - Process LabelsCollector with [name:defaultNacosLabelsCollector]
+2025-10-22 17:13:50.222 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect properties raw labels: null
+2025-10-22 17:13:50.223 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect properties labels: {}
+2025-10-22 17:13:50.223 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect jvm raw labels: null
+2025-10-22 17:13:50.223 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect jvm labels: {}
+2025-10-22 17:13:50.223 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect env raw labels: null
+2025-10-22 17:13:50.223 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect env labels: {}
+2025-10-22 17:13:50.223 [main] INFO  com.alibaba.nacos.common.labels - DefaultLabelsCollectorManager get labels finished,labels :{}
+2025-10-22 17:13:50.226 [Thread-1] INFO  c.a.n.client.auth.ram.identify.CredentialWatcher - null No credential found
+2025-10-22 17:13:50.227 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-10-22 17:13:50.227 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-10-22 17:13:50.250 [main] INFO  com.alibaba.nacos.client.config.impl.Limiter - limitTime:5.0
+2025-10-22 17:13:50.486 [main] INFO  c.a.n.client.config.impl.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:/Users/zhoushihao/nacos/config
+2025-10-22 17:13:50.494 [main] INFO  com.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of f0956b8f-f3cb-4d74-944b-eacaadf2ca87_config-0
+2025-10-22 17:13:50.505 [main] INFO  com.alibaba.nacos.common.remote.client - [f0956b8f-f3cb-4d74-944b-eacaadf2ca87_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$720/0x00000008013bcbb0
+2025-10-22 17:13:50.506 [main] INFO  com.alibaba.nacos.common.remote.client - [f0956b8f-f3cb-4d74-944b-eacaadf2ca87_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$721/0x00000008013bcfe0
+2025-10-22 17:13:50.506 [main] INFO  com.alibaba.nacos.common.remote.client - [f0956b8f-f3cb-4d74-944b-eacaadf2ca87_config-0] Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2025-10-22 17:13:50.506 [main] INFO  com.alibaba.nacos.common.remote.client - [f0956b8f-f3cb-4d74-944b-eacaadf2ca87_config-0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2025-10-22 17:13:50.510 [main] INFO  com.alibaba.nacos.common.remote.client - [f0956b8f-f3cb-4d74-944b-eacaadf2ca87_config-0] Try to connect to server on start up, server: {serverIp = 'localhost', server main port = 8848}
+2025-10-22 17:13:50.522 [main] INFO  c.a.nacos.common.remote.client.grpc.GrpcClient - grpc client connection server:localhost ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2025-10-22 17:13:50.854 [main] INFO  c.a.n.common.ability.AbstractAbilityControlManager - Ready to get current node abilities...
+2025-10-22 17:13:50.855 [main] INFO  c.a.n.common.ability.AbstractAbilityControlManager - Ready to initialize current node abilities, support modes: [SDK_CLIENT]
+2025-10-22 17:13:50.855 [main] INFO  c.a.n.common.ability.AbstractAbilityControlManager - Initialize current abilities finish...
+2025-10-22 17:13:50.856 [main] INFO  c.a.n.c.ability.discover.NacosAbilityManagerHolder - [AbilityControlManager] Successfully initialize AbilityControlManager
+2025-10-22 17:13:50.869 [main] INFO  com.alibaba.nacos.common.remote.client - [f0956b8f-f3cb-4d74-944b-eacaadf2ca87_config-0] Success to connect to server [localhost:8848] on start up, connectionId = 1761124430803_127.0.0.1_60557
+2025-10-22 17:13:50.870 [com.alibaba.nacos.client.remote.worker.0] INFO  com.alibaba.nacos.common.remote.client - [f0956b8f-f3cb-4d74-944b-eacaadf2ca87_config-0] Notify connected event to listeners.
+2025-10-22 17:13:50.870 [main] INFO  com.alibaba.nacos.common.remote.client - [f0956b8f-f3cb-4d74-944b-eacaadf2ca87_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2025-10-22 17:13:50.870 [com.alibaba.nacos.client.remote.worker.0] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [f0956b8f-f3cb-4d74-944b-eacaadf2ca87_config-0] Connected,notify listen context...
+2025-10-22 17:13:50.870 [main] INFO  com.alibaba.nacos.common.remote.client - [f0956b8f-f3cb-4d74-944b-eacaadf2ca87_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$738/0x0000000801513958
+2025-10-22 17:13:50.905 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[leadnews-article] & group[DEFAULT_GROUP]
+2025-10-22 17:13:50.912 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[leadnews-article.yaml] & group[DEFAULT_GROUP]
+2025-10-22 17:13:50.922 [main] INFO  com.alibaba.nacos.client.config.utils.JvmUtil - isMultiInstance:false
+2025-10-22 17:13:50.926 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-leadnews-article-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-leadnews-article.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-leadnews-article,DEFAULT_GROUP'}]
+2025-10-22 17:13:50.930 [main] INFO  com.nobody.article.LeadnewsArticleApplication - The following 1 profile is active: "dev"
+2025-10-22 17:13:51.436 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=76d79f59-6c04-326b-a87e-c58203a51803
+2025-10-22 17:13:51.749 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-10-22 17:13:51.760 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-10-22 17:13:51.762 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-22 17:13:51.762 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-10-22 17:13:51.801 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-22 17:13:51.802 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 863 ms
+2025-10-22 17:13:52.049 [main] INFO  o.s.v.beanvalidation.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-10-22 17:13:52.322 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-10-22 17:13:52.367 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-10-22 17:13:52.372 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2025-10-22 17:13:52.376 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from ans.namespace attribute : null
+2025-10-22 17:13:52.376 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from ALIBABA_ALIWARE_NAMESPACE attribute :null
+2025-10-22 17:13:52.376 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from namespace attribute :null
+2025-10-22 17:13:52.380 [main] INFO  com.alibaba.nacos.client.naming - FailoverDataSource type is class com.alibaba.nacos.client.naming.backups.datasource.DiskFailoverDataSource
+2025-10-22 17:13:52.382 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-10-22 17:13:52.382 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-10-22 17:13:52.506 [main] INFO  com.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of 763de8d3-bede-40c5-8c3a-d685466732a7
+2025-10-22 17:13:52.507 [main] INFO  com.alibaba.nacos.client.naming - Create naming rpc client for uuid->763de8d3-bede-40c5-8c3a-d685466732a7
+2025-10-22 17:13:52.508 [main] INFO  com.alibaba.nacos.common.remote.client - [763de8d3-bede-40c5-8c3a-d685466732a7] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2025-10-22 17:13:52.508 [main] INFO  com.alibaba.nacos.common.remote.client - [763de8d3-bede-40c5-8c3a-d685466732a7] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2025-10-22 17:13:52.508 [main] INFO  com.alibaba.nacos.common.remote.client - [763de8d3-bede-40c5-8c3a-d685466732a7] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2025-10-22 17:13:52.508 [main] INFO  com.alibaba.nacos.common.remote.client - [763de8d3-bede-40c5-8c3a-d685466732a7] Try to connect to server on start up, server: {serverIp = 'localhost', server main port = 8848}
+2025-10-22 17:13:52.508 [main] INFO  c.a.nacos.common.remote.client.grpc.GrpcClient - grpc client connection server:localhost ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2025-10-22 17:13:52.517 [main] INFO  com.alibaba.nacos.common.remote.client - [763de8d3-bede-40c5-8c3a-d685466732a7] Success to connect to server [localhost:8848] on start up, connectionId = 1761124432512_127.0.0.1_60558
+2025-10-22 17:13:52.517 [main] INFO  com.alibaba.nacos.common.remote.client - [763de8d3-bede-40c5-8c3a-d685466732a7] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2025-10-22 17:13:52.517 [com.alibaba.nacos.client.remote.worker.0] INFO  com.alibaba.nacos.common.remote.client - [763de8d3-bede-40c5-8c3a-d685466732a7] Notify connected event to listeners.
+2025-10-22 17:13:52.517 [main] INFO  com.alibaba.nacos.common.remote.client - [763de8d3-bede-40c5-8c3a-d685466732a7] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$738/0x0000000801513958
+2025-10-22 17:13:52.517 [com.alibaba.nacos.client.remote.worker.0] INFO  com.alibaba.nacos.client.naming - Grpc connection connect
+2025-10-22 17:13:52.518 [main] INFO  com.alibaba.nacos.client.naming - [REGISTER-SERVICE] public registering service leadnews-article with instance Instance{instanceId='null', ip='10.141.92.90', port=8081, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={IPv6=null, preserved.register.source=SPRING_CLOUD}}
+2025-10-22 17:13:52.527 [main] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP leadnews-article 10.141.92.90:8081 register finished
+2025-10-22 17:13:52.543 [main] INFO  com.nobody.article.LeadnewsArticleApplication - Started LeadnewsArticleApplication in 2.86 seconds (process running for 3.695)
+2025-10-22 17:13:52.547 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - config listener notify warn timeout millis use default 60000 millis 
+2025-10-22 17:13:52.548 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - nacos.cache.data.init.snapshot = true 
+2025-10-22 17:13:52.548 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-localhost_8848] [subscribe] leadnews-article-dev.yaml+DEFAULT_GROUP
+2025-10-22 17:13:52.555 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=leadnews-article-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2025-10-22 17:13:52.556 [main] INFO  c.a.cloud.nacos.refresh.NacosContextRefresher - [Nacos Config] Listening config: dataId=leadnews-article-dev.yaml, group=DEFAULT_GROUP
+2025-10-22 17:13:52.556 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-localhost_8848] [subscribe] leadnews-article+DEFAULT_GROUP
+2025-10-22 17:13:52.556 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=leadnews-article, group=DEFAULT_GROUP, cnt=1
+2025-10-22 17:13:52.556 [main] INFO  c.a.cloud.nacos.refresh.NacosContextRefresher - [Nacos Config] Listening config: dataId=leadnews-article, group=DEFAULT_GROUP
+2025-10-22 17:13:52.556 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-localhost_8848] [subscribe] leadnews-article.yaml+DEFAULT_GROUP
+2025-10-22 17:13:52.556 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=leadnews-article.yaml, group=DEFAULT_GROUP, cnt=1
+2025-10-22 17:13:52.556 [main] INFO  c.a.cloud.nacos.refresh.NacosContextRefresher - [Nacos Config] Listening config: dataId=leadnews-article.yaml, group=DEFAULT_GROUP
+2025-10-22 17:14:24.853 [main] INFO  com.alibaba.nacos.client.utils.ParamUtil - [settings] [req-serv] nacos-server port:8848
+2025-10-22 17:14:24.855 [main] INFO  com.alibaba.nacos.client.utils.ParamUtil - [settings] [http-client] connect timeout:1000
+2025-10-22 17:14:24.856 [main] INFO  com.alibaba.nacos.client.utils.ParamUtil - PER_TASK_CONFIG_SIZE: 3000.0
+2025-10-22 17:14:24.869 [main] INFO  com.alibaba.nacos.common.labels - DefaultLabelsCollectorManager get labels.....
+2025-10-22 17:14:24.869 [main] INFO  com.alibaba.nacos.common.labels - Process LabelsCollector with [name:defaultNacosLabelsCollector]
+2025-10-22 17:14:24.869 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect properties raw labels: null
+2025-10-22 17:14:24.869 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect properties labels: {}
+2025-10-22 17:14:24.869 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect jvm raw labels: null
+2025-10-22 17:14:24.869 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect jvm labels: {}
+2025-10-22 17:14:24.869 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect env raw labels: null
+2025-10-22 17:14:24.869 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect env labels: {}
+2025-10-22 17:14:24.870 [main] INFO  com.alibaba.nacos.common.labels - DefaultLabelsCollectorManager get labels finished,labels :{}
+2025-10-22 17:14:24.873 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-10-22 17:14:24.874 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-10-22 17:14:24.876 [Thread-1] INFO  c.a.n.client.auth.ram.identify.CredentialWatcher - null No credential found
+2025-10-22 17:14:24.894 [main] INFO  com.alibaba.nacos.client.config.impl.Limiter - limitTime:5.0
+2025-10-22 17:14:25.128 [main] INFO  c.a.n.client.config.impl.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:/Users/zhoushihao/nacos/config
+2025-10-22 17:14:25.131 [main] INFO  com.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of e2d26c07-5524-40b0-9105-b247eeb1e4ed_config-0
+2025-10-22 17:14:25.143 [main] INFO  com.alibaba.nacos.common.remote.client - [e2d26c07-5524-40b0-9105-b247eeb1e4ed_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$721/0x000000d8013be5e8
+2025-10-22 17:14:25.143 [main] INFO  com.alibaba.nacos.common.remote.client - [e2d26c07-5524-40b0-9105-b247eeb1e4ed_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$722/0x000000d8013bea18
+2025-10-22 17:14:25.143 [main] INFO  com.alibaba.nacos.common.remote.client - [e2d26c07-5524-40b0-9105-b247eeb1e4ed_config-0] Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2025-10-22 17:14:25.143 [main] INFO  com.alibaba.nacos.common.remote.client - [e2d26c07-5524-40b0-9105-b247eeb1e4ed_config-0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2025-10-22 17:14:25.148 [main] INFO  com.alibaba.nacos.common.remote.client - [e2d26c07-5524-40b0-9105-b247eeb1e4ed_config-0] Try to connect to server on start up, server: {serverIp = 'localhost', server main port = 8848}
+2025-10-22 17:14:25.161 [main] INFO  c.a.nacos.common.remote.client.grpc.GrpcClient - grpc client connection server:localhost ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2025-10-22 17:14:25.498 [main] INFO  c.a.n.common.ability.AbstractAbilityControlManager - Ready to get current node abilities...
+2025-10-22 17:14:25.499 [main] INFO  c.a.n.common.ability.AbstractAbilityControlManager - Ready to initialize current node abilities, support modes: [SDK_CLIENT]
+2025-10-22 17:14:25.499 [main] INFO  c.a.n.common.ability.AbstractAbilityControlManager - Initialize current abilities finish...
+2025-10-22 17:14:25.499 [main] INFO  c.a.n.c.ability.discover.NacosAbilityManagerHolder - [AbilityControlManager] Successfully initialize AbilityControlManager
+2025-10-22 17:14:25.510 [main] INFO  com.alibaba.nacos.common.remote.client - [e2d26c07-5524-40b0-9105-b247eeb1e4ed_config-0] Success to connect to server [localhost:8848] on start up, connectionId = 1761124465446_127.0.0.1_60584
+2025-10-22 17:14:25.511 [com.alibaba.nacos.client.remote.worker.0] INFO  com.alibaba.nacos.common.remote.client - [e2d26c07-5524-40b0-9105-b247eeb1e4ed_config-0] Notify connected event to listeners.
+2025-10-22 17:14:25.511 [main] INFO  com.alibaba.nacos.common.remote.client - [e2d26c07-5524-40b0-9105-b247eeb1e4ed_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2025-10-22 17:14:25.511 [com.alibaba.nacos.client.remote.worker.0] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [e2d26c07-5524-40b0-9105-b247eeb1e4ed_config-0] Connected,notify listen context...
+2025-10-22 17:14:25.511 [main] INFO  com.alibaba.nacos.common.remote.client - [e2d26c07-5524-40b0-9105-b247eeb1e4ed_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$739/0x000000d801515b70
+2025-10-22 17:14:25.542 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[leadnews-user] & group[DEFAULT_GROUP]
+2025-10-22 17:14:25.548 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[leadnews-user.yaml] & group[DEFAULT_GROUP]
+2025-10-22 17:14:25.554 [main] INFO  com.alibaba.nacos.client.config.utils.JvmUtil - isMultiInstance:false
+2025-10-22 17:14:25.557 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-leadnews-user-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-leadnews-user.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-leadnews-user,DEFAULT_GROUP'}]
+2025-10-22 17:14:25.560 [main] INFO  com.nobody.user.LeadnewsUserApplication - The following 1 profile is active: "dev"
+2025-10-22 17:14:26.009 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=8ca2521b-186a-34ac-b51b-f9dedb3501c7
+2025-10-22 17:14:26.245 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-22 17:14:26.253 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-22 17:14:26.254 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-22 17:14:26.254 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-10-22 17:14:26.291 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-22 17:14:26.291 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 723 ms
+2025-10-22 17:14:26.394 [main] ERROR org.mybatis.spring.mapper.MapperFactoryBean - Error while adding the mapper 'interface com.nobody.user.mapper.UserMapper' to configuration.
+org.apache.ibatis.builder.BuilderException: Parsing error was found in mapping #{login.phone) ,#(login.password}.  Check syntax #{property|(expression), var1=value1, var2=value2, ...} 
+	at org.apache.ibatis.builder.SqlSourceBuilder$ParameterMappingTokenHandler.parseParameterMapping(SqlSourceBuilder.java:156)
+	at org.apache.ibatis.builder.SqlSourceBuilder$ParameterMappingTokenHandler.buildParameterMapping(SqlSourceBuilder.java:95)
+	at org.apache.ibatis.builder.SqlSourceBuilder$ParameterMappingTokenHandler.handleToken(SqlSourceBuilder.java:90)
+	at org.apache.ibatis.parsing.GenericTokenParser.parse(GenericTokenParser.java:76)
+	at org.apache.ibatis.builder.SqlSourceBuilder.parse(SqlSourceBuilder.java:52)
+	at org.apache.ibatis.scripting.defaults.RawSqlSource.<init>(RawSqlSource.java:46)
+	at org.apache.ibatis.scripting.xmltags.XMLLanguageDriver.createSqlSource(XMLLanguageDriver.java:61)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.buildSqlSourceFromStrings(MapperAnnotationBuilder.java:592)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.buildSqlSource(MapperAnnotationBuilder.java:581)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.lambda$parseStatement$2(MapperAnnotationBuilder.java:287)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parseStatement(MapperAnnotationBuilder.java:286)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parse(MapperAnnotationBuilder.java:131)
+	at org.apache.ibatis.binding.MapperRegistry.addMapper(MapperRegistry.java:72)
+	at org.apache.ibatis.session.Configuration.addMapper(Configuration.java:943)
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:76)
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1690)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1635)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1752)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1635)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1188)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.nobody.user.LeadnewsUserApplication.main(LeadnewsUserApplication.java:12)
+Caused by: java.lang.StringIndexOutOfBoundsException: String index out of range: 31
+	at java.base/java.lang.StringLatin1.charAt(StringLatin1.java:48)
+	at java.base/java.lang.String.charAt(String.java:1517)
+	at org.apache.ibatis.builder.ParameterExpression.trimmedStr(ParameterExpression.java:130)
+	at org.apache.ibatis.builder.ParameterExpression.option(ParameterExpression.java:123)
+	at org.apache.ibatis.builder.ParameterExpression.jdbcTypeOpt(ParameterExpression.java:99)
+	at org.apache.ibatis.builder.ParameterExpression.property(ParameterExpression.java:70)
+	at org.apache.ibatis.builder.ParameterExpression.parse(ParameterExpression.java:47)
+	at org.apache.ibatis.builder.ParameterExpression.<init>(ParameterExpression.java:39)
+	at org.apache.ibatis.builder.SqlSourceBuilder$ParameterMappingTokenHandler.parseParameterMapping(SqlSourceBuilder.java:152)
+	... 63 common frames omitted
+2025-10-22 17:14:26.395 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/Users/zhoushihao/IdeaProjects/leadnews/leadnews-service/leadnews-user/target/classes/com/nobody/user/controller/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userServiceImpl' defined in file [/Users/zhoushihao/IdeaProjects/leadnews/leadnews-service/leadnews-user/target/classes/com/nobody/user/sevice/impl/UserServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userMapper' defined in file [/Users/zhoushihao/IdeaProjects/leadnews/leadnews-service/leadnews-user/target/classes/com/nobody/user/mapper/UserMapper.class]: org.apache.ibatis.builder.BuilderException: Parsing error was found in mapping #{login.phone) ,#(login.password}.  Check syntax #{property|(expression), var1=value1, var2=value2, ...} 
+2025-10-22 17:14:26.396 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2025-10-22 17:14:26.407 [main] INFO  o.s.b.a.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-22 17:14:26.417 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/Users/zhoushihao/IdeaProjects/leadnews/leadnews-service/leadnews-user/target/classes/com/nobody/user/controller/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userServiceImpl' defined in file [/Users/zhoushihao/IdeaProjects/leadnews/leadnews-service/leadnews-user/target/classes/com/nobody/user/sevice/impl/UserServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userMapper' defined in file [/Users/zhoushihao/IdeaProjects/leadnews/leadnews-service/leadnews-user/target/classes/com/nobody/user/mapper/UserMapper.class]: org.apache.ibatis.builder.BuilderException: Parsing error was found in mapping #{login.phone) ,#(login.password}.  Check syntax #{property|(expression), var1=value1, var2=value2, ...} 
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1188)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.nobody.user.LeadnewsUserApplication.main(LeadnewsUserApplication.java:12)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl' defined in file [/Users/zhoushihao/IdeaProjects/leadnews/leadnews-service/leadnews-user/target/classes/com/nobody/user/sevice/impl/UserServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userMapper' defined in file [/Users/zhoushihao/IdeaProjects/leadnews/leadnews-service/leadnews-user/target/classes/com/nobody/user/mapper/UserMapper.class]: org.apache.ibatis.builder.BuilderException: Parsing error was found in mapping #{login.phone) ,#(login.password}.  Check syntax #{property|(expression), var1=value1, var2=value2, ...} 
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1752)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1635)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 21 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userMapper' defined in file [/Users/zhoushihao/IdeaProjects/leadnews/leadnews-service/leadnews-user/target/classes/com/nobody/user/mapper/UserMapper.class]: org.apache.ibatis.builder.BuilderException: Parsing error was found in mapping #{login.phone) ,#(login.password}.  Check syntax #{property|(expression), var1=value1, var2=value2, ...} 
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1690)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1635)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 35 common frames omitted
+Caused by: java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Parsing error was found in mapping #{login.phone) ,#(login.password}.  Check syntax #{property|(expression), var1=value1, var2=value2, ...} 
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:79)
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822)
+	... 45 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Parsing error was found in mapping #{login.phone) ,#(login.password}.  Check syntax #{property|(expression), var1=value1, var2=value2, ...} 
+	at org.apache.ibatis.builder.SqlSourceBuilder$ParameterMappingTokenHandler.parseParameterMapping(SqlSourceBuilder.java:156)
+	at org.apache.ibatis.builder.SqlSourceBuilder$ParameterMappingTokenHandler.buildParameterMapping(SqlSourceBuilder.java:95)
+	at org.apache.ibatis.builder.SqlSourceBuilder$ParameterMappingTokenHandler.handleToken(SqlSourceBuilder.java:90)
+	at org.apache.ibatis.parsing.GenericTokenParser.parse(GenericTokenParser.java:76)
+	at org.apache.ibatis.builder.SqlSourceBuilder.parse(SqlSourceBuilder.java:52)
+	at org.apache.ibatis.scripting.defaults.RawSqlSource.<init>(RawSqlSource.java:46)
+	at org.apache.ibatis.scripting.xmltags.XMLLanguageDriver.createSqlSource(XMLLanguageDriver.java:61)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.buildSqlSourceFromStrings(MapperAnnotationBuilder.java:592)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.buildSqlSource(MapperAnnotationBuilder.java:581)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.lambda$parseStatement$2(MapperAnnotationBuilder.java:287)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parseStatement(MapperAnnotationBuilder.java:286)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parse(MapperAnnotationBuilder.java:131)
+	at org.apache.ibatis.binding.MapperRegistry.addMapper(MapperRegistry.java:72)
+	at org.apache.ibatis.session.Configuration.addMapper(Configuration.java:943)
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:76)
+	... 48 common frames omitted
+Caused by: java.lang.StringIndexOutOfBoundsException: String index out of range: 31
+	at java.base/java.lang.StringLatin1.charAt(StringLatin1.java:48)
+	at java.base/java.lang.String.charAt(String.java:1517)
+	at org.apache.ibatis.builder.ParameterExpression.trimmedStr(ParameterExpression.java:130)
+	at org.apache.ibatis.builder.ParameterExpression.option(ParameterExpression.java:123)
+	at org.apache.ibatis.builder.ParameterExpression.jdbcTypeOpt(ParameterExpression.java:99)
+	at org.apache.ibatis.builder.ParameterExpression.property(ParameterExpression.java:70)
+	at org.apache.ibatis.builder.ParameterExpression.parse(ParameterExpression.java:47)
+	at org.apache.ibatis.builder.ParameterExpression.<init>(ParameterExpression.java:39)
+	at org.apache.ibatis.builder.SqlSourceBuilder$ParameterMappingTokenHandler.parseParameterMapping(SqlSourceBuilder.java:152)
+	... 63 common frames omitted
+2025-10-22 17:14:26.419 [Thread-2] WARN  c.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2025-10-22 17:14:26.419 [Thread-5] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2025-10-22 17:14:26.419 [Thread-5] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2025-10-22 17:14:26.419 [Thread-2] WARN  c.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2025-10-22 17:15:48.460 [main] INFO  com.alibaba.nacos.client.utils.ParamUtil - [settings] [req-serv] nacos-server port:8848
+2025-10-22 17:15:48.462 [main] INFO  com.alibaba.nacos.client.utils.ParamUtil - [settings] [http-client] connect timeout:1000
+2025-10-22 17:15:48.463 [main] INFO  com.alibaba.nacos.client.utils.ParamUtil - PER_TASK_CONFIG_SIZE: 3000.0
+2025-10-22 17:15:48.478 [main] INFO  com.alibaba.nacos.common.labels - DefaultLabelsCollectorManager get labels.....
+2025-10-22 17:15:48.478 [main] INFO  com.alibaba.nacos.common.labels - Process LabelsCollector with [name:defaultNacosLabelsCollector]
+2025-10-22 17:15:48.478 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect properties raw labels: null
+2025-10-22 17:15:48.479 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect properties labels: {}
+2025-10-22 17:15:48.479 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect jvm raw labels: null
+2025-10-22 17:15:48.479 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect jvm labels: {}
+2025-10-22 17:15:48.479 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect env raw labels: null
+2025-10-22 17:15:48.479 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect env labels: {}
+2025-10-22 17:15:48.479 [main] INFO  com.alibaba.nacos.common.labels - DefaultLabelsCollectorManager get labels finished,labels :{}
+2025-10-22 17:15:48.483 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-10-22 17:15:48.483 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-10-22 17:15:48.485 [Thread-1] INFO  c.a.n.client.auth.ram.identify.CredentialWatcher - null No credential found
+2025-10-22 17:15:48.504 [main] INFO  com.alibaba.nacos.client.config.impl.Limiter - limitTime:5.0
+2025-10-22 17:15:48.759 [main] INFO  c.a.n.client.config.impl.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:/Users/zhoushihao/nacos/config
+2025-10-22 17:15:48.763 [main] INFO  com.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of 177b7b8f-cc42-4d9c-921d-3a4a892ef67c_config-0
+2025-10-22 17:15:48.775 [main] INFO  com.alibaba.nacos.common.remote.client - [177b7b8f-cc42-4d9c-921d-3a4a892ef67c_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$721/0x000000d0013bc870
+2025-10-22 17:15:48.775 [main] INFO  com.alibaba.nacos.common.remote.client - [177b7b8f-cc42-4d9c-921d-3a4a892ef67c_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$722/0x000000d0013bcca0
+2025-10-22 17:15:48.775 [main] INFO  com.alibaba.nacos.common.remote.client - [177b7b8f-cc42-4d9c-921d-3a4a892ef67c_config-0] Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2025-10-22 17:15:48.775 [main] INFO  com.alibaba.nacos.common.remote.client - [177b7b8f-cc42-4d9c-921d-3a4a892ef67c_config-0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2025-10-22 17:15:48.780 [main] INFO  com.alibaba.nacos.common.remote.client - [177b7b8f-cc42-4d9c-921d-3a4a892ef67c_config-0] Try to connect to server on start up, server: {serverIp = 'localhost', server main port = 8848}
+2025-10-22 17:15:48.792 [main] INFO  c.a.nacos.common.remote.client.grpc.GrpcClient - grpc client connection server:localhost ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2025-10-22 17:15:49.137 [main] INFO  c.a.n.common.ability.AbstractAbilityControlManager - Ready to get current node abilities...
+2025-10-22 17:15:49.138 [main] INFO  c.a.n.common.ability.AbstractAbilityControlManager - Ready to initialize current node abilities, support modes: [SDK_CLIENT]
+2025-10-22 17:15:49.138 [main] INFO  c.a.n.common.ability.AbstractAbilityControlManager - Initialize current abilities finish...
+2025-10-22 17:15:49.139 [main] INFO  c.a.n.c.ability.discover.NacosAbilityManagerHolder - [AbilityControlManager] Successfully initialize AbilityControlManager
+2025-10-22 17:15:49.152 [main] INFO  com.alibaba.nacos.common.remote.client - [177b7b8f-cc42-4d9c-921d-3a4a892ef67c_config-0] Success to connect to server [localhost:8848] on start up, connectionId = 1761124549086_127.0.0.1_60654
+2025-10-22 17:15:49.152 [com.alibaba.nacos.client.remote.worker.0] INFO  com.alibaba.nacos.common.remote.client - [177b7b8f-cc42-4d9c-921d-3a4a892ef67c_config-0] Notify connected event to listeners.
+2025-10-22 17:15:49.152 [com.alibaba.nacos.client.remote.worker.0] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [177b7b8f-cc42-4d9c-921d-3a4a892ef67c_config-0] Connected,notify listen context...
+2025-10-22 17:15:49.152 [main] INFO  com.alibaba.nacos.common.remote.client - [177b7b8f-cc42-4d9c-921d-3a4a892ef67c_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2025-10-22 17:15:49.152 [main] INFO  com.alibaba.nacos.common.remote.client - [177b7b8f-cc42-4d9c-921d-3a4a892ef67c_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$739/0x000000d001513f40
+2025-10-22 17:15:49.185 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[leadnews-user] & group[DEFAULT_GROUP]
+2025-10-22 17:15:49.192 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[leadnews-user.yaml] & group[DEFAULT_GROUP]
+2025-10-22 17:15:49.200 [main] INFO  com.alibaba.nacos.client.config.utils.JvmUtil - isMultiInstance:false
+2025-10-22 17:15:49.203 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-leadnews-user-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-leadnews-user.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-leadnews-user,DEFAULT_GROUP'}]
+2025-10-22 17:15:49.207 [main] INFO  com.nobody.user.LeadnewsUserApplication - The following 1 profile is active: "dev"
+2025-10-22 17:15:49.678 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=8ca2521b-186a-34ac-b51b-f9dedb3501c7
+2025-10-22 17:15:49.941 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-22 17:15:49.950 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-22 17:15:49.951 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-22 17:15:49.951 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-10-22 17:15:49.986 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-22 17:15:49.987 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 771 ms
+2025-10-22 17:15:50.092 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/Users/zhoushihao/IdeaProjects/leadnews/leadnews-service/leadnews-user/target/classes/com/nobody/user/controller/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userServiceImpl' defined in file [/Users/zhoushihao/IdeaProjects/leadnews/leadnews-service/leadnews-user/target/classes/com/nobody/user/sevice/impl/UserServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'userServiceImpl': Requested bean is currently in creation: Is there an unresolvable circular reference or an asynchronous initialization dependency?
+2025-10-22 17:15:50.093 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2025-10-22 17:15:50.103 [main] INFO  o.s.b.a.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-22 17:15:50.113 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+   userController defined in file [/Users/zhoushihao/IdeaProjects/leadnews/leadnews-service/leadnews-user/target/classes/com/nobody/user/controller/UserController.class]
+┌─────┐
+|  userServiceImpl defined in file [/Users/zhoushihao/IdeaProjects/leadnews/leadnews-service/leadnews-user/target/classes/com/nobody/user/sevice/impl/UserServiceImpl.class]
+└─────┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2025-10-22 17:15:50.114 [Thread-2] WARN  c.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2025-10-22 17:15:50.114 [Thread-5] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2025-10-22 17:17:47.107 [main] INFO  com.alibaba.nacos.client.utils.ParamUtil - [settings] [req-serv] nacos-server port:8848
+2025-10-22 17:17:47.109 [main] INFO  com.alibaba.nacos.client.utils.ParamUtil - [settings] [http-client] connect timeout:1000
+2025-10-22 17:17:47.109 [main] INFO  com.alibaba.nacos.client.utils.ParamUtil - PER_TASK_CONFIG_SIZE: 3000.0
+2025-10-22 17:17:47.122 [main] INFO  com.alibaba.nacos.common.labels - DefaultLabelsCollectorManager get labels.....
+2025-10-22 17:17:47.123 [main] INFO  com.alibaba.nacos.common.labels - Process LabelsCollector with [name:defaultNacosLabelsCollector]
+2025-10-22 17:17:47.123 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect properties raw labels: null
+2025-10-22 17:17:47.123 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect properties labels: {}
+2025-10-22 17:17:47.123 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect jvm raw labels: null
+2025-10-22 17:17:47.123 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect jvm labels: {}
+2025-10-22 17:17:47.123 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect env raw labels: null
+2025-10-22 17:17:47.123 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect env labels: {}
+2025-10-22 17:17:47.124 [main] INFO  com.alibaba.nacos.common.labels - DefaultLabelsCollectorManager get labels finished,labels :{}
+2025-10-22 17:17:47.127 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-10-22 17:17:47.128 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-10-22 17:17:47.128 [Thread-1] INFO  c.a.n.client.auth.ram.identify.CredentialWatcher - null No credential found
+2025-10-22 17:17:47.148 [main] INFO  com.alibaba.nacos.client.config.impl.Limiter - limitTime:5.0
+2025-10-22 17:17:47.385 [main] INFO  c.a.n.client.config.impl.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:/Users/zhoushihao/nacos/config
+2025-10-22 17:17:47.388 [main] INFO  com.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of 02226dd8-bac3-40a4-924d-7b5259a268b3_config-0
+2025-10-22 17:17:47.399 [main] INFO  com.alibaba.nacos.common.remote.client - [02226dd8-bac3-40a4-924d-7b5259a268b3_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$721/0x00000070013be138
+2025-10-22 17:17:47.399 [main] INFO  com.alibaba.nacos.common.remote.client - [02226dd8-bac3-40a4-924d-7b5259a268b3_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$722/0x00000070013be568
+2025-10-22 17:17:47.399 [main] INFO  com.alibaba.nacos.common.remote.client - [02226dd8-bac3-40a4-924d-7b5259a268b3_config-0] Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2025-10-22 17:17:47.399 [main] INFO  com.alibaba.nacos.common.remote.client - [02226dd8-bac3-40a4-924d-7b5259a268b3_config-0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2025-10-22 17:17:47.403 [main] INFO  com.alibaba.nacos.common.remote.client - [02226dd8-bac3-40a4-924d-7b5259a268b3_config-0] Try to connect to server on start up, server: {serverIp = 'localhost', server main port = 8848}
+2025-10-22 17:17:47.415 [main] INFO  c.a.nacos.common.remote.client.grpc.GrpcClient - grpc client connection server:localhost ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2025-10-22 17:17:47.742 [main] INFO  c.a.n.common.ability.AbstractAbilityControlManager - Ready to get current node abilities...
+2025-10-22 17:17:47.743 [main] INFO  c.a.n.common.ability.AbstractAbilityControlManager - Ready to initialize current node abilities, support modes: [SDK_CLIENT]
+2025-10-22 17:17:47.744 [main] INFO  c.a.n.common.ability.AbstractAbilityControlManager - Initialize current abilities finish...
+2025-10-22 17:17:47.744 [main] INFO  c.a.n.c.ability.discover.NacosAbilityManagerHolder - [AbilityControlManager] Successfully initialize AbilityControlManager
+2025-10-22 17:17:47.757 [main] INFO  com.alibaba.nacos.common.remote.client - [02226dd8-bac3-40a4-924d-7b5259a268b3_config-0] Success to connect to server [localhost:8848] on start up, connectionId = 1761124667692_127.0.0.1_60755
+2025-10-22 17:17:47.757 [com.alibaba.nacos.client.remote.worker.0] INFO  com.alibaba.nacos.common.remote.client - [02226dd8-bac3-40a4-924d-7b5259a268b3_config-0] Notify connected event to listeners.
+2025-10-22 17:17:47.757 [com.alibaba.nacos.client.remote.worker.0] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [02226dd8-bac3-40a4-924d-7b5259a268b3_config-0] Connected,notify listen context...
+2025-10-22 17:17:47.757 [main] INFO  com.alibaba.nacos.common.remote.client - [02226dd8-bac3-40a4-924d-7b5259a268b3_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2025-10-22 17:17:47.758 [main] INFO  com.alibaba.nacos.common.remote.client - [02226dd8-bac3-40a4-924d-7b5259a268b3_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$739/0x00000070015154b0
+2025-10-22 17:17:47.792 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[leadnews-user] & group[DEFAULT_GROUP]
+2025-10-22 17:17:47.798 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[leadnews-user.yaml] & group[DEFAULT_GROUP]
+2025-10-22 17:17:47.804 [main] INFO  com.alibaba.nacos.client.config.utils.JvmUtil - isMultiInstance:false
+2025-10-22 17:17:47.808 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-leadnews-user-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-leadnews-user.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-leadnews-user,DEFAULT_GROUP'}]
+2025-10-22 17:17:47.812 [main] INFO  com.nobody.user.LeadnewsUserApplication - The following 1 profile is active: "dev"
+2025-10-22 17:17:48.253 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=8ca2521b-186a-34ac-b51b-f9dedb3501c7
+2025-10-22 17:17:48.490 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-22 17:17:48.499 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-22 17:17:48.500 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-22 17:17:48.500 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-10-22 17:17:48.534 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-22 17:17:48.534 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 714 ms
+2025-10-22 17:17:48.761 [main] INFO  o.s.v.beanvalidation.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-10-22 17:17:49.019 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-10-22 17:17:49.068 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-22 17:17:49.074 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-22 17:17:49.077 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from ans.namespace attribute : null
+2025-10-22 17:17:49.078 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from ALIBABA_ALIWARE_NAMESPACE attribute :null
+2025-10-22 17:17:49.078 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from namespace attribute :null
+2025-10-22 17:17:49.082 [main] INFO  com.alibaba.nacos.client.naming - FailoverDataSource type is class com.alibaba.nacos.client.naming.backups.datasource.DiskFailoverDataSource
+2025-10-22 17:17:49.084 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-10-22 17:17:49.084 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-10-22 17:17:49.208 [main] INFO  com.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of a0dbe8c3-224e-491a-b360-1931c0579380
+2025-10-22 17:17:49.210 [main] INFO  com.alibaba.nacos.client.naming - Create naming rpc client for uuid->a0dbe8c3-224e-491a-b360-1931c0579380
+2025-10-22 17:17:49.210 [main] INFO  com.alibaba.nacos.common.remote.client - [a0dbe8c3-224e-491a-b360-1931c0579380] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2025-10-22 17:17:49.210 [main] INFO  com.alibaba.nacos.common.remote.client - [a0dbe8c3-224e-491a-b360-1931c0579380] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2025-10-22 17:17:49.211 [main] INFO  com.alibaba.nacos.common.remote.client - [a0dbe8c3-224e-491a-b360-1931c0579380] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2025-10-22 17:17:49.211 [main] INFO  com.alibaba.nacos.common.remote.client - [a0dbe8c3-224e-491a-b360-1931c0579380] Try to connect to server on start up, server: {serverIp = 'localhost', server main port = 8848}
+2025-10-22 17:17:49.212 [main] INFO  c.a.nacos.common.remote.client.grpc.GrpcClient - grpc client connection server:localhost ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2025-10-22 17:17:49.224 [main] INFO  com.alibaba.nacos.common.remote.client - [a0dbe8c3-224e-491a-b360-1931c0579380] Success to connect to server [localhost:8848] on start up, connectionId = 1761124669216_127.0.0.1_60756
+2025-10-22 17:17:49.224 [main] INFO  com.alibaba.nacos.common.remote.client - [a0dbe8c3-224e-491a-b360-1931c0579380] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2025-10-22 17:17:49.224 [main] INFO  com.alibaba.nacos.common.remote.client - [a0dbe8c3-224e-491a-b360-1931c0579380] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$739/0x00000070015154b0
+2025-10-22 17:17:49.224 [com.alibaba.nacos.client.remote.worker.0] INFO  com.alibaba.nacos.common.remote.client - [a0dbe8c3-224e-491a-b360-1931c0579380] Notify connected event to listeners.
+2025-10-22 17:17:49.224 [com.alibaba.nacos.client.remote.worker.0] INFO  com.alibaba.nacos.client.naming - Grpc connection connect
+2025-10-22 17:17:49.225 [main] INFO  com.alibaba.nacos.client.naming - [REGISTER-SERVICE] public registering service leadnews-user with instance Instance{instanceId='null', ip='10.141.92.90', port=8080, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={IPv6=null, preserved.register.source=SPRING_CLOUD}}
+2025-10-22 17:17:49.236 [main] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP leadnews-user 10.141.92.90:8080 register finished
+2025-10-22 17:17:49.252 [main] INFO  com.nobody.user.LeadnewsUserApplication - Started LeadnewsUserApplication in 2.604 seconds (process running for 3.187)
+2025-10-22 17:17:49.254 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - config listener notify warn timeout millis use default 60000 millis 
+2025-10-22 17:17:49.255 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - nacos.cache.data.init.snapshot = true 
+2025-10-22 17:17:49.255 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-localhost_8848] [subscribe] leadnews-user+DEFAULT_GROUP
+2025-10-22 17:17:49.260 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=leadnews-user, group=DEFAULT_GROUP, cnt=1
+2025-10-22 17:17:49.261 [main] INFO  c.a.cloud.nacos.refresh.NacosContextRefresher - [Nacos Config] Listening config: dataId=leadnews-user, group=DEFAULT_GROUP
+2025-10-22 17:17:49.261 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-localhost_8848] [subscribe] leadnews-user-dev.yaml+DEFAULT_GROUP
+2025-10-22 17:17:49.261 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=leadnews-user-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2025-10-22 17:17:49.261 [main] INFO  c.a.cloud.nacos.refresh.NacosContextRefresher - [Nacos Config] Listening config: dataId=leadnews-user-dev.yaml, group=DEFAULT_GROUP
+2025-10-22 17:17:49.261 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-localhost_8848] [subscribe] leadnews-user.yaml+DEFAULT_GROUP
+2025-10-22 17:17:49.261 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=leadnews-user.yaml, group=DEFAULT_GROUP, cnt=1
+2025-10-22 17:17:49.262 [main] INFO  c.a.cloud.nacos.refresh.NacosContextRefresher - [Nacos Config] Listening config: dataId=leadnews-user.yaml, group=DEFAULT_GROUP
+2025-10-22 17:20:52.553 [Thread-5] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2025-10-22 17:20:52.553 [Thread-2] WARN  c.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2025-10-22 17:20:52.555 [Thread-5] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2025-10-22 17:20:52.555 [Thread-2] WARN  c.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2025-10-22 17:20:52.564 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-22 17:20:52.567 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-22 17:20:52.571 [SpringApplicationShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registering from Nacos Server now...
+2025-10-22 17:20:52.571 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - [DEREGISTER-SERVICE] public deregistering service leadnews-user with instance: Instance{instanceId='null', ip='10.141.92.90', port=8080, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+2025-10-22 17:20:52.577 [SpringApplicationShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registration finished.
+2025-10-22 17:20:52.577 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.cache.ServiceInfoHolder do shutdown begin
+2025-10-22 17:20:52.577 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+2025-10-22 17:20:52.577 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+2025-10-22 17:20:52.577 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.cache.ServiceInfoHolder do shutdown stop
+2025-10-22 17:20:52.577 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate do shutdown begin
+2025-10-22 17:20:52.577 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServiceInfoUpdateService do shutdown begin
+2025-10-22 17:20:52.578 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServiceInfoUpdateService do shutdown stop
+2025-10-22 17:20:52.578 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServerListManager do shutdown begin
+2025-10-22 17:20:52.578 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Start destroying NacosRestTemplate
+2025-10-22 17:20:52.578 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Destruction of the end
+2025-10-22 17:20:52.578 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServerListManager do shutdown stop
+2025-10-22 17:20:52.578 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.http.NamingHttpClientProxy do shutdown begin
+2025-10-22 17:20:52.578 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Start destroying NacosRestTemplate
+2025-10-22 17:20:52.578 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Destruction of the end
+2025-10-22 17:20:52.578 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.http.NamingHttpClientProxy do shutdown stop
+2025-10-22 17:20:52.578 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - Shutdown naming grpc client proxy for  uuid->a0dbe8c3-224e-491a-b360-1931c0579380
+2025-10-22 17:20:52.578 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - Shutdown grpc redo service executor java.util.concurrent.ScheduledThreadPoolExecutor@313a45df[Running, pool size = 1, active threads = 0, queued tasks = 1, completed tasks = 61]
+2025-10-22 17:20:52.578 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.common.remote.client - Shutdown rpc client, set status to shutdown
+2025-10-22 17:20:52.578 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.common.remote.client - Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@26880bde[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+2025-10-22 17:20:52.578 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.common.remote.client - Close current connection 1761124669216_127.0.0.1_60756
+2025-10-22 17:20:52.579 [nacos-grpc-client-executor-localhost-87] INFO  c.a.nacos.common.remote.client.grpc.GrpcClient - [1761124669216_127.0.0.1_60756]Ignore complete event,isRunning:false,isAbandon=false
+2025-10-22 17:20:52.581 [SpringApplicationShutdownHook] INFO  c.a.nacos.common.remote.client.grpc.GrpcClient - Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@705a733[Running, pool size = 7, active threads = 0, queued tasks = 0, completed tasks = 88]
+2025-10-22 17:20:52.581 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - shutdown and remove naming rpc client  for uuid ->a0dbe8c3-224e-491a-b360-1931c0579380
+2025-10-22 17:20:52.581 [SpringApplicationShutdownHook] INFO  c.a.n.client.auth.ram.identify.CredentialWatcher - [null] CredentialWatcher is stopped
+2025-10-22 17:20:52.581 [SpringApplicationShutdownHook] INFO  c.a.n.client.auth.ram.identify.CredentialService - [null] CredentialService is freed
+2025-10-22 17:20:52.581 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate do shutdown stop
+2025-10-22 17:20:55.895 [main] INFO  com.alibaba.nacos.client.utils.ParamUtil - [settings] [req-serv] nacos-server port:8848
+2025-10-22 17:20:55.897 [main] INFO  com.alibaba.nacos.client.utils.ParamUtil - [settings] [http-client] connect timeout:1000
+2025-10-22 17:20:55.898 [main] INFO  com.alibaba.nacos.client.utils.ParamUtil - PER_TASK_CONFIG_SIZE: 3000.0
+2025-10-22 17:20:55.912 [Thread-1] INFO  c.a.n.client.auth.ram.identify.CredentialWatcher - null No credential found
+2025-10-22 17:20:55.913 [main] INFO  com.alibaba.nacos.common.labels - DefaultLabelsCollectorManager get labels.....
+2025-10-22 17:20:55.914 [main] INFO  com.alibaba.nacos.common.labels - Process LabelsCollector with [name:defaultNacosLabelsCollector]
+2025-10-22 17:20:55.914 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect properties raw labels: null
+2025-10-22 17:20:55.914 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect properties labels: {}
+2025-10-22 17:20:55.914 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect jvm raw labels: null
+2025-10-22 17:20:55.914 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect jvm labels: {}
+2025-10-22 17:20:55.914 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect env raw labels: null
+2025-10-22 17:20:55.915 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect env labels: {}
+2025-10-22 17:20:55.915 [main] INFO  com.alibaba.nacos.common.labels - DefaultLabelsCollectorManager get labels finished,labels :{}
+2025-10-22 17:20:55.919 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-10-22 17:20:55.919 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-10-22 17:20:55.940 [main] INFO  com.alibaba.nacos.client.config.impl.Limiter - limitTime:5.0
+2025-10-22 17:20:56.170 [main] INFO  c.a.n.client.config.impl.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:/Users/zhoushihao/nacos/config
+2025-10-22 17:20:56.173 [main] INFO  com.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of ab4d9ddc-a5de-4a1e-92e3-e41c193f7a03_config-0
+2025-10-22 17:20:56.184 [main] INFO  com.alibaba.nacos.common.remote.client - [ab4d9ddc-a5de-4a1e-92e3-e41c193f7a03_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$721/0x00000070013bcb48
+2025-10-22 17:20:56.184 [main] INFO  com.alibaba.nacos.common.remote.client - [ab4d9ddc-a5de-4a1e-92e3-e41c193f7a03_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$722/0x00000070013bcf78
+2025-10-22 17:20:56.184 [main] INFO  com.alibaba.nacos.common.remote.client - [ab4d9ddc-a5de-4a1e-92e3-e41c193f7a03_config-0] Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2025-10-22 17:20:56.185 [main] INFO  com.alibaba.nacos.common.remote.client - [ab4d9ddc-a5de-4a1e-92e3-e41c193f7a03_config-0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2025-10-22 17:20:56.188 [main] INFO  com.alibaba.nacos.common.remote.client - [ab4d9ddc-a5de-4a1e-92e3-e41c193f7a03_config-0] Try to connect to server on start up, server: {serverIp = 'localhost', server main port = 8848}
+2025-10-22 17:20:56.204 [main] INFO  c.a.nacos.common.remote.client.grpc.GrpcClient - grpc client connection server:localhost ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2025-10-22 17:20:56.513 [main] INFO  c.a.n.common.ability.AbstractAbilityControlManager - Ready to get current node abilities...
+2025-10-22 17:20:56.514 [main] INFO  c.a.n.common.ability.AbstractAbilityControlManager - Ready to initialize current node abilities, support modes: [SDK_CLIENT]
+2025-10-22 17:20:56.514 [main] INFO  c.a.n.common.ability.AbstractAbilityControlManager - Initialize current abilities finish...
+2025-10-22 17:20:56.515 [main] INFO  c.a.n.c.ability.discover.NacosAbilityManagerHolder - [AbilityControlManager] Successfully initialize AbilityControlManager
+2025-10-22 17:20:56.526 [main] INFO  com.alibaba.nacos.common.remote.client - [ab4d9ddc-a5de-4a1e-92e3-e41c193f7a03_config-0] Success to connect to server [localhost:8848] on start up, connectionId = 1761124856472_127.0.0.1_61033
+2025-10-22 17:20:56.527 [com.alibaba.nacos.client.remote.worker.0] INFO  com.alibaba.nacos.common.remote.client - [ab4d9ddc-a5de-4a1e-92e3-e41c193f7a03_config-0] Notify connected event to listeners.
+2025-10-22 17:20:56.527 [com.alibaba.nacos.client.remote.worker.0] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [ab4d9ddc-a5de-4a1e-92e3-e41c193f7a03_config-0] Connected,notify listen context...
+2025-10-22 17:20:56.527 [main] INFO  com.alibaba.nacos.common.remote.client - [ab4d9ddc-a5de-4a1e-92e3-e41c193f7a03_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2025-10-22 17:20:56.527 [main] INFO  com.alibaba.nacos.common.remote.client - [ab4d9ddc-a5de-4a1e-92e3-e41c193f7a03_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$739/0x0000007001513f40
+2025-10-22 17:20:56.556 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[leadnews-user] & group[DEFAULT_GROUP]
+2025-10-22 17:20:56.561 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[leadnews-user.yaml] & group[DEFAULT_GROUP]
+2025-10-22 17:20:56.568 [main] INFO  com.alibaba.nacos.client.config.utils.JvmUtil - isMultiInstance:false
+2025-10-22 17:20:56.571 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-leadnews-user-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-leadnews-user.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-leadnews-user,DEFAULT_GROUP'}]
+2025-10-22 17:20:56.574 [main] INFO  com.nobody.user.LeadnewsUserApplication - The following 1 profile is active: "dev"
+2025-10-22 17:20:56.995 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=8ca2521b-186a-34ac-b51b-f9dedb3501c7
+2025-10-22 17:20:57.113 [Thread-5] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2025-10-22 17:20:57.112 [Thread-2] WARN  c.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2025-10-22 17:20:57.114 [Thread-5] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2025-10-22 17:20:57.114 [Thread-2] WARN  c.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2025-10-22 17:20:57.125 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-22 17:20:57.130 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-22 17:20:57.138 [SpringApplicationShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registering from Nacos Server now...
+2025-10-22 17:20:57.138 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - [DEREGISTER-SERVICE] public deregistering service leadnews-article with instance: Instance{instanceId='null', ip='10.141.92.90', port=8081, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+2025-10-22 17:20:57.143 [SpringApplicationShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registration finished.
+2025-10-22 17:20:57.143 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.cache.ServiceInfoHolder do shutdown begin
+2025-10-22 17:20:57.143 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+2025-10-22 17:20:57.143 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+2025-10-22 17:20:57.144 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.cache.ServiceInfoHolder do shutdown stop
+2025-10-22 17:20:57.144 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate do shutdown begin
+2025-10-22 17:20:57.144 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServiceInfoUpdateService do shutdown begin
+2025-10-22 17:20:57.144 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServiceInfoUpdateService do shutdown stop
+2025-10-22 17:20:57.144 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServerListManager do shutdown begin
+2025-10-22 17:20:57.144 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Start destroying NacosRestTemplate
+2025-10-22 17:20:57.144 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Destruction of the end
+2025-10-22 17:20:57.144 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServerListManager do shutdown stop
+2025-10-22 17:20:57.144 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.http.NamingHttpClientProxy do shutdown begin
+2025-10-22 17:20:57.144 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Start destroying NacosRestTemplate
+2025-10-22 17:20:57.144 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Destruction of the end
+2025-10-22 17:20:57.144 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.http.NamingHttpClientProxy do shutdown stop
+2025-10-22 17:20:57.144 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - Shutdown naming grpc client proxy for  uuid->763de8d3-bede-40c5-8c3a-d685466732a7
+2025-10-22 17:20:57.144 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - Shutdown grpc redo service executor java.util.concurrent.ScheduledThreadPoolExecutor@1b8bfe4e[Running, pool size = 1, active threads = 0, queued tasks = 1, completed tasks = 141]
+2025-10-22 17:20:57.144 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.common.remote.client - Shutdown rpc client, set status to shutdown
+2025-10-22 17:20:57.144 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.common.remote.client - Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@f8140b3[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+2025-10-22 17:20:57.144 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.common.remote.client - Close current connection 1761124432512_127.0.0.1_60558
+2025-10-22 17:20:57.146 [nacos-grpc-client-executor-localhost-172] INFO  c.a.nacos.common.remote.client.grpc.GrpcClient - [1761124432512_127.0.0.1_60558]Ignore complete event,isRunning:false,isAbandon=false
+2025-10-22 17:20:57.147 [SpringApplicationShutdownHook] INFO  c.a.nacos.common.remote.client.grpc.GrpcClient - Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@dda54d8[Running, pool size = 6, active threads = 0, queued tasks = 0, completed tasks = 173]
+2025-10-22 17:20:57.147 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - shutdown and remove naming rpc client  for uuid ->763de8d3-bede-40c5-8c3a-d685466732a7
+2025-10-22 17:20:57.147 [SpringApplicationShutdownHook] INFO  c.a.n.client.auth.ram.identify.CredentialWatcher - [null] CredentialWatcher is stopped
+2025-10-22 17:20:57.147 [SpringApplicationShutdownHook] INFO  c.a.n.client.auth.ram.identify.CredentialService - [null] CredentialService is freed
+2025-10-22 17:20:57.147 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate do shutdown stop
+2025-10-22 17:20:57.243 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-22 17:20:57.251 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-22 17:20:57.251 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-22 17:20:57.251 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-10-22 17:20:57.284 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-22 17:20:57.285 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 703 ms
+2025-10-22 17:20:57.529 [main] INFO  o.s.v.beanvalidation.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-10-22 17:20:57.813 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-10-22 17:20:57.890 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-22 17:20:57.908 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-22 17:20:57.915 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from ans.namespace attribute : null
+2025-10-22 17:20:57.915 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from ALIBABA_ALIWARE_NAMESPACE attribute :null
+2025-10-22 17:20:57.915 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from namespace attribute :null
+2025-10-22 17:20:57.925 [main] INFO  com.alibaba.nacos.client.naming - FailoverDataSource type is class com.alibaba.nacos.client.naming.backups.datasource.DiskFailoverDataSource
+2025-10-22 17:20:57.933 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-10-22 17:20:57.933 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-10-22 17:20:58.097 [main] INFO  com.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of d6c5226a-af45-455a-9f3c-57309f6fcaee
+2025-10-22 17:20:58.099 [main] INFO  com.alibaba.nacos.client.naming - Create naming rpc client for uuid->d6c5226a-af45-455a-9f3c-57309f6fcaee
+2025-10-22 17:20:58.099 [main] INFO  com.alibaba.nacos.common.remote.client - [d6c5226a-af45-455a-9f3c-57309f6fcaee] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2025-10-22 17:20:58.100 [main] INFO  com.alibaba.nacos.common.remote.client - [d6c5226a-af45-455a-9f3c-57309f6fcaee] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2025-10-22 17:20:58.100 [main] INFO  com.alibaba.nacos.common.remote.client - [d6c5226a-af45-455a-9f3c-57309f6fcaee] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2025-10-22 17:20:58.101 [main] INFO  com.alibaba.nacos.common.remote.client - [d6c5226a-af45-455a-9f3c-57309f6fcaee] Try to connect to server on start up, server: {serverIp = 'localhost', server main port = 8848}
+2025-10-22 17:20:58.102 [main] INFO  c.a.nacos.common.remote.client.grpc.GrpcClient - grpc client connection server:localhost ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2025-10-22 17:20:58.126 [main] INFO  com.alibaba.nacos.common.remote.client - [d6c5226a-af45-455a-9f3c-57309f6fcaee] Success to connect to server [localhost:8848] on start up, connectionId = 1761124858111_127.0.0.1_61037
+2025-10-22 17:20:58.127 [main] INFO  com.alibaba.nacos.common.remote.client - [d6c5226a-af45-455a-9f3c-57309f6fcaee] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2025-10-22 17:20:58.127 [main] INFO  com.alibaba.nacos.common.remote.client - [d6c5226a-af45-455a-9f3c-57309f6fcaee] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$739/0x0000007001513f40
+2025-10-22 17:20:58.128 [com.alibaba.nacos.client.remote.worker.0] INFO  com.alibaba.nacos.common.remote.client - [d6c5226a-af45-455a-9f3c-57309f6fcaee] Notify connected event to listeners.
+2025-10-22 17:20:58.129 [com.alibaba.nacos.client.remote.worker.0] INFO  com.alibaba.nacos.client.naming - Grpc connection connect
+2025-10-22 17:20:58.129 [main] INFO  com.alibaba.nacos.client.naming - [REGISTER-SERVICE] public registering service leadnews-user with instance Instance{instanceId='null', ip='10.141.92.90', port=8080, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={IPv6=null, preserved.register.source=SPRING_CLOUD}}
+2025-10-22 17:20:58.147 [main] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP leadnews-user 10.141.92.90:8080 register finished
+2025-10-22 17:20:58.175 [main] INFO  com.nobody.user.LeadnewsUserApplication - Started LeadnewsUserApplication in 3.056 seconds (process running for 3.828)
+2025-10-22 17:20:58.180 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - config listener notify warn timeout millis use default 60000 millis 
+2025-10-22 17:20:58.181 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - nacos.cache.data.init.snapshot = true 
+2025-10-22 17:20:58.181 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-localhost_8848] [subscribe] leadnews-user+DEFAULT_GROUP
+2025-10-22 17:20:58.192 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=leadnews-user, group=DEFAULT_GROUP, cnt=1
+2025-10-22 17:20:58.193 [main] INFO  c.a.cloud.nacos.refresh.NacosContextRefresher - [Nacos Config] Listening config: dataId=leadnews-user, group=DEFAULT_GROUP
+2025-10-22 17:20:58.193 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-localhost_8848] [subscribe] leadnews-user-dev.yaml+DEFAULT_GROUP
+2025-10-22 17:20:58.193 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=leadnews-user-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2025-10-22 17:20:58.193 [main] INFO  c.a.cloud.nacos.refresh.NacosContextRefresher - [Nacos Config] Listening config: dataId=leadnews-user-dev.yaml, group=DEFAULT_GROUP
+2025-10-22 17:20:58.194 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-localhost_8848] [subscribe] leadnews-user.yaml+DEFAULT_GROUP
+2025-10-22 17:20:58.194 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=leadnews-user.yaml, group=DEFAULT_GROUP, cnt=1
+2025-10-22 17:20:58.194 [main] INFO  c.a.cloud.nacos.refresh.NacosContextRefresher - [Nacos Config] Listening config: dataId=leadnews-user.yaml, group=DEFAULT_GROUP
+2025-10-22 17:21:00.499 [main] INFO  com.alibaba.nacos.client.utils.ParamUtil - [settings] [req-serv] nacos-server port:8848
+2025-10-22 17:21:00.501 [main] INFO  com.alibaba.nacos.client.utils.ParamUtil - [settings] [http-client] connect timeout:1000
+2025-10-22 17:21:00.502 [main] INFO  com.alibaba.nacos.client.utils.ParamUtil - PER_TASK_CONFIG_SIZE: 3000.0
+2025-10-22 17:21:00.514 [main] INFO  com.alibaba.nacos.common.labels - DefaultLabelsCollectorManager get labels.....
+2025-10-22 17:21:00.514 [main] INFO  com.alibaba.nacos.common.labels - Process LabelsCollector with [name:defaultNacosLabelsCollector]
+2025-10-22 17:21:00.514 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect properties raw labels: null
+2025-10-22 17:21:00.514 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect properties labels: {}
+2025-10-22 17:21:00.514 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect jvm raw labels: null
+2025-10-22 17:21:00.514 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect jvm labels: {}
+2025-10-22 17:21:00.514 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect env raw labels: null
+2025-10-22 17:21:00.515 [main] INFO  com.alibaba.nacos.common.labels - default nacos collect env labels: {}
+2025-10-22 17:21:00.515 [main] INFO  com.alibaba.nacos.common.labels - DefaultLabelsCollectorManager get labels finished,labels :{}
+2025-10-22 17:21:00.516 [Thread-1] INFO  c.a.n.client.auth.ram.identify.CredentialWatcher - null No credential found
+2025-10-22 17:21:00.518 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-10-22 17:21:00.519 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-10-22 17:21:00.539 [main] INFO  com.alibaba.nacos.client.config.impl.Limiter - limitTime:5.0
+2025-10-22 17:21:00.809 [main] INFO  c.a.n.client.config.impl.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:/Users/zhoushihao/nacos/config
+2025-10-22 17:21:00.815 [main] INFO  com.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of 89b67fcf-4178-47ae-80eb-dde126d3ace8_config-0
+2025-10-22 17:21:00.840 [main] INFO  com.alibaba.nacos.common.remote.client - [89b67fcf-4178-47ae-80eb-dde126d3ace8_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$720/0x000000b0013bf208
+2025-10-22 17:21:00.841 [main] INFO  com.alibaba.nacos.common.remote.client - [89b67fcf-4178-47ae-80eb-dde126d3ace8_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$721/0x000000b0013bf638
+2025-10-22 17:21:00.841 [main] INFO  com.alibaba.nacos.common.remote.client - [89b67fcf-4178-47ae-80eb-dde126d3ace8_config-0] Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2025-10-22 17:21:00.842 [main] INFO  com.alibaba.nacos.common.remote.client - [89b67fcf-4178-47ae-80eb-dde126d3ace8_config-0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2025-10-22 17:21:00.848 [main] INFO  com.alibaba.nacos.common.remote.client - [89b67fcf-4178-47ae-80eb-dde126d3ace8_config-0] Try to connect to server on start up, server: {serverIp = 'localhost', server main port = 8848}
+2025-10-22 17:21:00.866 [main] INFO  c.a.nacos.common.remote.client.grpc.GrpcClient - grpc client connection server:localhost ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2025-10-22 17:21:01.219 [main] INFO  c.a.n.common.ability.AbstractAbilityControlManager - Ready to get current node abilities...
+2025-10-22 17:21:01.220 [main] INFO  c.a.n.common.ability.AbstractAbilityControlManager - Ready to initialize current node abilities, support modes: [SDK_CLIENT]
+2025-10-22 17:21:01.221 [main] INFO  c.a.n.common.ability.AbstractAbilityControlManager - Initialize current abilities finish...
+2025-10-22 17:21:01.221 [main] INFO  c.a.n.c.ability.discover.NacosAbilityManagerHolder - [AbilityControlManager] Successfully initialize AbilityControlManager
+2025-10-22 17:21:01.232 [main] INFO  com.alibaba.nacos.common.remote.client - [89b67fcf-4178-47ae-80eb-dde126d3ace8_config-0] Success to connect to server [localhost:8848] on start up, connectionId = 1761124861165_127.0.0.1_61058
+2025-10-22 17:21:01.232 [com.alibaba.nacos.client.remote.worker.0] INFO  com.alibaba.nacos.common.remote.client - [89b67fcf-4178-47ae-80eb-dde126d3ace8_config-0] Notify connected event to listeners.
+2025-10-22 17:21:01.232 [com.alibaba.nacos.client.remote.worker.0] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [89b67fcf-4178-47ae-80eb-dde126d3ace8_config-0] Connected,notify listen context...
+2025-10-22 17:21:01.232 [main] INFO  com.alibaba.nacos.common.remote.client - [89b67fcf-4178-47ae-80eb-dde126d3ace8_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2025-10-22 17:21:01.232 [main] INFO  com.alibaba.nacos.common.remote.client - [89b67fcf-4178-47ae-80eb-dde126d3ace8_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$738/0x000000b001516958
+2025-10-22 17:21:01.262 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[leadnews-article] & group[DEFAULT_GROUP]
+2025-10-22 17:21:01.268 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[leadnews-article.yaml] & group[DEFAULT_GROUP]
+2025-10-22 17:21:01.274 [main] INFO  com.alibaba.nacos.client.config.utils.JvmUtil - isMultiInstance:false
+2025-10-22 17:21:01.277 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-leadnews-article-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-leadnews-article.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-leadnews-article,DEFAULT_GROUP'}]
+2025-10-22 17:21:01.280 [main] INFO  com.nobody.article.LeadnewsArticleApplication - The following 1 profile is active: "dev"
+2025-10-22 17:21:01.685 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=f7e712f6-c73a-3236-8a77-bc0d58506293
+2025-10-22 17:21:01.923 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-10-22 17:21:01.931 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-10-22 17:21:01.932 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-22 17:21:01.932 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-10-22 17:21:01.964 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-22 17:21:01.964 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 676 ms
+2025-10-22 17:21:02.209 [main] INFO  o.s.v.beanvalidation.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-10-22 17:21:02.516 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-10-22 17:21:02.551 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-10-22 17:21:02.556 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2025-10-22 17:21:02.559 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from ans.namespace attribute : null
+2025-10-22 17:21:02.559 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from ALIBABA_ALIWARE_NAMESPACE attribute :null
+2025-10-22 17:21:02.559 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from namespace attribute :null
+2025-10-22 17:21:02.562 [main] INFO  com.alibaba.nacos.client.naming - FailoverDataSource type is class com.alibaba.nacos.client.naming.backups.datasource.DiskFailoverDataSource
+2025-10-22 17:21:02.564 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-10-22 17:21:02.564 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-10-22 17:21:02.680 [main] INFO  com.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of 2483d62a-1bab-486c-b50f-f0b5ad1db713
+2025-10-22 17:21:02.681 [main] INFO  com.alibaba.nacos.client.naming - Create naming rpc client for uuid->2483d62a-1bab-486c-b50f-f0b5ad1db713
+2025-10-22 17:21:02.682 [main] INFO  com.alibaba.nacos.common.remote.client - [2483d62a-1bab-486c-b50f-f0b5ad1db713] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2025-10-22 17:21:02.682 [main] INFO  com.alibaba.nacos.common.remote.client - [2483d62a-1bab-486c-b50f-f0b5ad1db713] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2025-10-22 17:21:02.682 [main] INFO  com.alibaba.nacos.common.remote.client - [2483d62a-1bab-486c-b50f-f0b5ad1db713] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2025-10-22 17:21:02.682 [main] INFO  com.alibaba.nacos.common.remote.client - [2483d62a-1bab-486c-b50f-f0b5ad1db713] Try to connect to server on start up, server: {serverIp = 'localhost', server main port = 8848}
+2025-10-22 17:21:02.682 [main] INFO  c.a.nacos.common.remote.client.grpc.GrpcClient - grpc client connection server:localhost ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2025-10-22 17:21:02.690 [main] INFO  com.alibaba.nacos.common.remote.client - [2483d62a-1bab-486c-b50f-f0b5ad1db713] Success to connect to server [localhost:8848] on start up, connectionId = 1761124862685_127.0.0.1_61059
+2025-10-22 17:21:02.690 [main] INFO  com.alibaba.nacos.common.remote.client - [2483d62a-1bab-486c-b50f-f0b5ad1db713] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2025-10-22 17:21:02.690 [com.alibaba.nacos.client.remote.worker.0] INFO  com.alibaba.nacos.common.remote.client - [2483d62a-1bab-486c-b50f-f0b5ad1db713] Notify connected event to listeners.
+2025-10-22 17:21:02.690 [main] INFO  com.alibaba.nacos.common.remote.client - [2483d62a-1bab-486c-b50f-f0b5ad1db713] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$738/0x000000b001516958
+2025-10-22 17:21:02.690 [com.alibaba.nacos.client.remote.worker.0] INFO  com.alibaba.nacos.client.naming - Grpc connection connect
+2025-10-22 17:21:02.691 [main] INFO  com.alibaba.nacos.client.naming - [REGISTER-SERVICE] public registering service leadnews-article with instance Instance{instanceId='null', ip='10.141.92.90', port=8081, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={IPv6=null, preserved.register.source=SPRING_CLOUD}}
+2025-10-22 17:21:02.698 [main] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP leadnews-article 10.141.92.90:8081 register finished
+2025-10-22 17:21:02.711 [main] INFO  com.nobody.article.LeadnewsArticleApplication - Started LeadnewsArticleApplication in 2.734 seconds (process running for 3.538)
+2025-10-22 17:21:02.713 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - config listener notify warn timeout millis use default 60000 millis 
+2025-10-22 17:21:02.713 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - nacos.cache.data.init.snapshot = true 
+2025-10-22 17:21:02.713 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-localhost_8848] [subscribe] leadnews-article-dev.yaml+DEFAULT_GROUP
+2025-10-22 17:21:02.718 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=leadnews-article-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2025-10-22 17:21:02.718 [main] INFO  c.a.cloud.nacos.refresh.NacosContextRefresher - [Nacos Config] Listening config: dataId=leadnews-article-dev.yaml, group=DEFAULT_GROUP
+2025-10-22 17:21:02.718 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-localhost_8848] [subscribe] leadnews-article+DEFAULT_GROUP
+2025-10-22 17:21:02.718 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=leadnews-article, group=DEFAULT_GROUP, cnt=1
+2025-10-22 17:21:02.718 [main] INFO  c.a.cloud.nacos.refresh.NacosContextRefresher - [Nacos Config] Listening config: dataId=leadnews-article, group=DEFAULT_GROUP
+2025-10-22 17:21:02.718 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-localhost_8848] [subscribe] leadnews-article.yaml+DEFAULT_GROUP
+2025-10-22 17:21:02.718 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=leadnews-article.yaml, group=DEFAULT_GROUP, cnt=1
+2025-10-22 17:21:02.718 [main] INFO  c.a.cloud.nacos.refresh.NacosContextRefresher - [Nacos Config] Listening config: dataId=leadnews-article.yaml, group=DEFAULT_GROUP
+2025-10-22 17:21:48.905 [http-nio-8081-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-22 17:21:48.906 [http-nio-8081-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-22 17:21:48.908 [http-nio-8081-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-10-22 17:24:20.110 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-22 17:24:20.111 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-22 17:24:20.114 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-10-22 17:30:04.278 [Thread-5] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2025-10-22 17:30:04.277 [Thread-2] WARN  c.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2025-10-22 17:30:04.278 [Thread-2] WARN  c.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2025-10-22 17:30:04.280 [Thread-5] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2025-10-22 17:30:04.277 [Thread-5] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2025-10-22 17:30:04.281 [Thread-5] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2025-10-22 17:30:04.281 [Thread-2] WARN  c.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2025-10-22 17:30:04.281 [Thread-2] WARN  c.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2025-10-22 17:30:04.284 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-22 17:30:04.285 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-22 17:30:04.288 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-22 17:30:04.289 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-22 17:30:04.293 [SpringApplicationShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registering from Nacos Server now...
+2025-10-22 17:30:04.294 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - [DEREGISTER-SERVICE] public deregistering service leadnews-article with instance: Instance{instanceId='null', ip='10.141.92.90', port=8081, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+2025-10-22 17:30:04.294 [SpringApplicationShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registering from Nacos Server now...
+2025-10-22 17:30:04.294 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - [DEREGISTER-SERVICE] public deregistering service leadnews-user with instance: Instance{instanceId='null', ip='10.141.92.90', port=8080, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+2025-10-22 17:30:04.298 [SpringApplicationShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registration finished.
+2025-10-22 17:30:04.298 [SpringApplicationShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registration finished.
+2025-10-22 17:30:04.299 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.cache.ServiceInfoHolder do shutdown begin
+2025-10-22 17:30:04.299 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+2025-10-22 17:30:04.299 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.cache.ServiceInfoHolder do shutdown begin
+2025-10-22 17:30:04.299 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+2025-10-22 17:30:04.299 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+2025-10-22 17:30:04.299 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.cache.ServiceInfoHolder do shutdown stop
+2025-10-22 17:30:04.299 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+2025-10-22 17:30:04.299 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate do shutdown begin
+2025-10-22 17:30:04.299 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.cache.ServiceInfoHolder do shutdown stop
+2025-10-22 17:30:04.299 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServiceInfoUpdateService do shutdown begin
+2025-10-22 17:30:04.299 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServiceInfoUpdateService do shutdown stop
+2025-10-22 17:30:04.299 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate do shutdown begin
+2025-10-22 17:30:04.299 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServerListManager do shutdown begin
+2025-10-22 17:30:04.299 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServiceInfoUpdateService do shutdown begin
+2025-10-22 17:30:04.299 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Start destroying NacosRestTemplate
+2025-10-22 17:30:04.299 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServiceInfoUpdateService do shutdown stop
+2025-10-22 17:30:04.299 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Destruction of the end
+2025-10-22 17:30:04.299 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServerListManager do shutdown begin
+2025-10-22 17:30:04.299 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServerListManager do shutdown stop
+2025-10-22 17:30:04.299 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Start destroying NacosRestTemplate
+2025-10-22 17:30:04.299 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.http.NamingHttpClientProxy do shutdown begin
+2025-10-22 17:30:04.299 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Start destroying NacosRestTemplate
+2025-10-22 17:30:04.299 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Destruction of the end
+2025-10-22 17:30:04.299 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Destruction of the end
+2025-10-22 17:30:04.299 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServerListManager do shutdown stop
+2025-10-22 17:30:04.300 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.http.NamingHttpClientProxy do shutdown stop
+2025-10-22 17:30:04.300 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.http.NamingHttpClientProxy do shutdown begin
+2025-10-22 17:30:04.300 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Start destroying NacosRestTemplate
+2025-10-22 17:30:04.300 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - Shutdown naming grpc client proxy for  uuid->d6c5226a-af45-455a-9f3c-57309f6fcaee
+2025-10-22 17:30:04.300 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Destruction of the end
+2025-10-22 17:30:04.300 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.http.NamingHttpClientProxy do shutdown stop
+2025-10-22 17:30:04.300 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - Shutdown naming grpc client proxy for  uuid->2483d62a-1bab-486c-b50f-f0b5ad1db713
+2025-10-22 17:30:04.300 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - Shutdown grpc redo service executor java.util.concurrent.ScheduledThreadPoolExecutor@3c15141a[Running, pool size = 1, active threads = 0, queued tasks = 1, completed tasks = 181]
+2025-10-22 17:30:04.300 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - Shutdown grpc redo service executor java.util.concurrent.ScheduledThreadPoolExecutor@1fff4021[Running, pool size = 1, active threads = 0, queued tasks = 1, completed tasks = 180]
+2025-10-22 17:30:04.300 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.common.remote.client - Shutdown rpc client, set status to shutdown
+2025-10-22 17:30:04.300 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.common.remote.client - Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@4a9a449a[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+2025-10-22 17:30:04.300 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.common.remote.client - Shutdown rpc client, set status to shutdown
+2025-10-22 17:30:04.300 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.common.remote.client - Close current connection 1761124858111_127.0.0.1_61037
+2025-10-22 17:30:04.300 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.common.remote.client - Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@5ecd7b06[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+2025-10-22 17:30:04.300 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.common.remote.client - Close current connection 1761124862685_127.0.0.1_61059
+2025-10-22 17:30:04.301 [nacos-grpc-client-executor-localhost-212] INFO  c.a.nacos.common.remote.client.grpc.GrpcClient - [1761124862685_127.0.0.1_61059]Ignore complete event,isRunning:false,isAbandon=false
+2025-10-22 17:30:04.301 [nacos-grpc-client-executor-localhost-216] INFO  c.a.nacos.common.remote.client.grpc.GrpcClient - [1761124858111_127.0.0.1_61037]Ignore complete event,isRunning:false,isAbandon=false
+2025-10-22 17:30:04.302 [SpringApplicationShutdownHook] INFO  c.a.nacos.common.remote.client.grpc.GrpcClient - Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@59062a0f[Running, pool size = 7, active threads = 0, queued tasks = 0, completed tasks = 213]
+2025-10-22 17:30:04.303 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - shutdown and remove naming rpc client  for uuid ->2483d62a-1bab-486c-b50f-f0b5ad1db713
+2025-10-22 17:30:04.303 [SpringApplicationShutdownHook] INFO  c.a.n.client.auth.ram.identify.CredentialWatcher - [null] CredentialWatcher is stopped
+2025-10-22 17:30:04.303 [SpringApplicationShutdownHook] INFO  c.a.n.client.auth.ram.identify.CredentialService - [null] CredentialService is freed
+2025-10-22 17:30:04.303 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate do shutdown stop
+2025-10-22 17:30:04.303 [SpringApplicationShutdownHook] INFO  c.a.nacos.common.remote.client.grpc.GrpcClient - Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@6ce7d16d[Running, pool size = 6, active threads = 0, queued tasks = 0, completed tasks = 217]
+2025-10-22 17:30:04.304 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - shutdown and remove naming rpc client  for uuid ->d6c5226a-af45-455a-9f3c-57309f6fcaee
+2025-10-22 17:30:04.304 [SpringApplicationShutdownHook] INFO  c.a.n.client.auth.ram.identify.CredentialWatcher - [null] CredentialWatcher is stopped
+2025-10-22 17:30:04.304 [SpringApplicationShutdownHook] INFO  c.a.n.client.auth.ram.identify.CredentialService - [null] CredentialService is freed
+2025-10-22 17:30:04.304 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate do shutdown stop
