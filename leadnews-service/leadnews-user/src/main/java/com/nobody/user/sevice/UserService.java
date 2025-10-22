@@ -8,4 +8,6 @@ public interface UserService {
     // 登陆
     public Result login(Login login);
 
+    // 注册
+    Result create(Login login);
 }

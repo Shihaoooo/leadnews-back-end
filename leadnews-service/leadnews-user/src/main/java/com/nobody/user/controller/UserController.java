@@ -20,15 +20,28 @@ public class UserController {
     // 构造函数注入
     private final UserService userService;
 
+    @GetMapping("/test")
+    public Result test(){
+        return Result.success("通啦～");
+    }
+
     @PostMapping("/login") // 测试接口
     @Operation(summary = "登陆",description = "根据密码登陆")
     public Result login(@RequestBody Login login){
         // 1 正常登陆
         if (login.getPassword()==null && login.getPhone()==null){
-            return Result.error(AppHttpCodeEnum.LOGIN_PASSWORD_ERROR);
+            return Result.error(AppHttpCodeEnum.AP_USER_DATA_NOT_EXIST);
         }
         // 2 根据手机号查询用户
         return  userService.login(login);
-
     }
+
+    @PostMapping("/Sign") // 注册接口
+    @Operation(summary = "注册", description = "根据手机号注册")
+    public Result create(@RequestBody Login login){
+
+        return userService.create(login);
+    }
+
+
 }

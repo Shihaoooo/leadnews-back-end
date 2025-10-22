@@ -10,10 +10,13 @@ import com.nobody.utils.JWTUtils;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.util.DigestUtils;
 
 import java.util.HashMap;
 import java.util.Map;
 
+@Transactional
 @Service
 @Slf4j
 @RequiredArgsConstructor
@@ -34,8 +37,11 @@ public class UserServiceImpl implements UserService {
         // 比对密码
         String salt = user.getSalt();
         String password = user.getPassword();
-        String pwd = user.getPassword();
-        if (pwd.equals(login.getPassword())){
+
+        String pwd = DigestUtils.md5DigestAsHex((password + salt).getBytes());
+
+        //
+        if (pwd.equals(user.getPassword())){
             // 返回数据
             JWTUtils jwtUtils = new JWTUtils();
             String token = jwtUtils.generateToken(user.getId().toString());
@@ -55,6 +61,16 @@ public class UserServiceImpl implements UserService {
         }
 
 
+
+    }
+
+    @Override
+    public Result create(Login login) {
+        // 手机号已存在不能注册
+        if (userMapper.create(login)){
+            return Result.success(AppHttpCodeEnum.SUCCESS);
+        }
+        return Result.error(AppHttpCodeEnum.DUPLICATE_ACCOUNT);
 
     }
 }
