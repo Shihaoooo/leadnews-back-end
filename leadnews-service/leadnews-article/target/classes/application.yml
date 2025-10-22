@@ -1,0 +1,19 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: leadnews-article
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        username: nacos
+        password: nacos
+        service: leadnews-article
+      config:
+        server-addr: localhost:8848
+        username: nacos
+        password: nacos
+        file-extension: yaml
