@@ -29,6 +29,8 @@
         <module>leadnews-utils</module>
         <module>leadnews-test</module>
         <module>leadnews-service/leadnews-article</module>
+        <module>leadnews-basic</module>
+        <module>leadnews-basic/leadnews-file</module>
     </modules>
     <scm>
         <connection/>
