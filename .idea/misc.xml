@@ -14,6 +14,7 @@
         <option value="$PROJECT_DIR$/leadnews-utils/pom.xml" />
         <option value="$PROJECT_DIR$/leadnews-service/leadnews-user/pom.xml" />
         <option value="$PROJECT_DIR$/leadnews-service/leadnews-article/pom.xml" />
+        <option value="$PROJECT_DIR$/leadnews-basic/leadnews-file/leadnews-file-starter/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
