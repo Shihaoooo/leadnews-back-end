@@ -2,36 +2,50 @@ package com.nobody.article.controller;
 
 import com.nobody.article.sevice.ApArticleService;
 import com.nobody.common.constants.ArticleConstants;
+import com.nobody.file.service.MinIOStorageService;
+import com.nobody.file.service.impl.MinIOStorageServer;
 import com.nobody.model.dtos.ArticleHomeDto;
 import com.nobody.model.dtos.Result;
+import com.nobody.model.enums.AppHttpCodeEnum;
+import io.swagger.v3.oas.annotations.Operation;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.*;
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
+
+@Slf4j
 @RestController
 @RequestMapping("/article")
 @RequiredArgsConstructor
 public class ArticleController {
 
+    final private MinIOStorageServer minIOStorageServer;
+
     final private ApArticleService apArticleService;
 
-    @GetMapping("/test")
-    public Result test(){
-        return Result.success("通啦～");
-    }
+
 
     @PostMapping("/load")
+    @Operation(summary = "加载" ,description = "加载(首页)")
     public Result load(@RequestBody ArticleHomeDto dto){
         return apArticleService.load(dto, ArticleConstants.LOADTYPE_LOAD_MORE);
     }
 
     @PostMapping("/loadmore")
+    @Operation(summary = "加载更多",description = "下拉刷新")
     public Result loadmore(@RequestBody ArticleHomeDto dto){
         return apArticleService.load(dto,ArticleConstants.LOADTYPE_LOAD_MORE);
     }
 
     @PostMapping("/loadnew")
+    @Operation(summary = "加载更多",description = "上拉刷新")
     public Result loadnew(@RequestBody ArticleHomeDto dto){
         return apArticleService.load(dto,ArticleConstants.LOADTYPE_LOAD_NEW);
     }
+
 
 }
