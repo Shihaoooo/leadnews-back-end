@@ -18,8 +18,8 @@ public class MinIOStorageServer implements MinIOStorageService {
         this.minioProperties = minioProperties;
 
         this.minioClient = MinioClient.builder()
-                .credentials(minioProperties.getACCESSKEY(), minioProperties.getSECRETKEY())
-                .endpoint(minioProperties.getBUCKET())
+                .credentials(minioProperties.getAccessKey(), minioProperties.getSecretKey())
+                .endpoint(minioProperties.getBucket())
                 .build();
     }
 
@@ -62,7 +62,7 @@ public class MinIOStorageServer implements MinIOStorageService {
             PutObjectArgs putObjectArgs = PutObjectArgs.builder()
                     .object(filePath)
                     .contentType("image/jpg")
-                    .bucket(minioProperties.getBUCKET())
+                    .bucket(minioProperties.getBucket())
                     .stream(inputStream,-1 ,-1)
                     .build();
 
@@ -74,7 +74,7 @@ public class MinIOStorageServer implements MinIOStorageService {
             // "http://10.141.92,90:9000/leadnews"
             // "http://10.141.92.90:9000/leadnews/"
             // "http://10.141.92.90:9000/leadnews/dirPath/2025/10/15/filename
-            return minioProperties.getSERVER_LOCAL() + "/" + minioProperties.getBUCKET() +  // "http://10.141.92,90:9000/leadnews"
+            return minioProperties.getServerLocal() + "/" + minioProperties.getBucket() +  // "http://10.141.92,90:9000/leadnews"
                     "/" + // "http://10.141.92.90:9000/leadnews/"
                     filePath;
 
@@ -92,12 +92,12 @@ public class MinIOStorageServer implements MinIOStorageService {
             PutObjectArgs putObjectArgs = PutObjectArgs.builder()
                     .object(filePath)
                     .contentType("text/html")
-                    .bucket(minioProperties.getBUCKET())
+                    .bucket(minioProperties.getBucket())
                     .stream(inputStream,-1,-1)
                     .build();
 
             minioClient.putObject(putObjectArgs);
-            return minioProperties.getSERVER_LOCAL() + "/" + minioProperties.getBUCKET() +
+            return minioProperties.getServerLocal() + "/" + minioProperties.getBucket() +
                     "/" +
                     filePath;
         }catch (Exception e){
@@ -114,7 +114,7 @@ public class MinIOStorageServer implements MinIOStorageService {
     * */
     @Override
     public void del(String pathUrl) throws Exception {
-        String key = pathUrl.replace(minioProperties.getSERVER_LOCAL()+ "/" , "");
+        String key = pathUrl.replace(minioProperties.getServerLocal()+ "/" , "");
         int index = key.indexOf("/");
         String bucket = key.substring(0,index);
         String filePath = key.substring(index + 1);
@@ -134,7 +134,7 @@ public class MinIOStorageServer implements MinIOStorageService {
 
     @Override
     public byte[] downLoadFile(String pathUrl) throws Exception {
-        String key = pathUrl.replace(minioProperties.getSERVER_LOCAL()+ "/" , "");
+        String key = pathUrl.replace(minioProperties.getServerLocal()+ "/" , "");
         int index = key.indexOf("/");
         String bucket = key.substring(0,index);
         String filePath = key.substring(index + 1);

@@ -1,22 +1,19 @@
 package com.nobody.file.config;
 
-
 import lombok.Data;
-import lombok.Getter;
-import org.springframework.stereotype.Component;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 
 import java.io.Serializable;
 
-@Getter
-@Component
+@Data
+@ConfigurationProperties(prefix = "minio")
 public class MinioProperties implements Serializable {
 
-    final private String ACCESSKEY = "minioadmin";
-    final private String SECRETKEY = "minioadmin";
+    private String accessKey;
 
-    final private String BUCKET = "leadnews";
+    private String secretKey;
 
-    final private String SERVER_LOCAL = "http://10.141.92.90:9000";
+    private String bucket;
 
-
+    private String serverLocal;
 }
