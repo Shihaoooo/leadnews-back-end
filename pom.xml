@@ -28,9 +28,8 @@
         <module>leadnews-feign-api</module>
         <module>leadnews-utils</module>
         <module>leadnews-test</module>
-        <module>leadnews-service/leadnews-article</module>
         <module>leadnews-basic</module>
-        <module>leadnews-basic/leadnews-file</module>
+        <module>leadnews-gateway</module>
     </modules>
     <scm>
         <connection/>
@@ -45,6 +44,14 @@
         <spring-cloud-alibaba.version>2023.0.1.0</spring-cloud-alibaba.version>
     </properties>
     <dependencies>
+
+
+        <!--swagger可能会需要的依赖-->
+        <dependency>
+            <groupId>org.jetbrains.kotlin</groupId>
+            <artifactId>kotlin-reflect</artifactId>
+            <version>1.8.22</version>
+        </dependency>
 
 
         <!--微服务起步依赖-->
@@ -92,6 +99,14 @@
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
                 <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>3.4.9</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>

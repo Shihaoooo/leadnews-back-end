@@ -1,9 +1,12 @@
 package com.nobody.model.wemedia.pojos;
 
 import io.swagger.v3.oas.annotations.media.Schema;
+import lombok.Data;
 
 import java.util.Date;
 
+@Data
+@Schema(description = "自媒体用户信息实体类")
 public class WmUser {
 
     @Schema(description = "主键ID")

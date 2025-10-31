@@ -24,6 +24,7 @@ public enum AppHttpCodeEnum {
     PARAM_INVALID(501, "无效参数"),
     PARAM_IMAGE_FORMAT_ERROR(502, "图片格式有误"),
     SERVER_ERROR(503, "服务器内部错误"),
+    EMPTY_FILE(504, "上传的文件为空"),
 
     // ========== 数据错误相关（1000~2000） ==========
     DATA_EXIST(1000, "数据已经存在"),

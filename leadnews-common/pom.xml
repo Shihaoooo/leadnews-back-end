@@ -8,7 +8,6 @@
         <version>0.0.1-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.nobody</groupId>
     <artifactId>leadnews-common</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>leadnews-common</name>
@@ -37,11 +36,12 @@
         </dependency>
 
 
-        <dependency>
-            <groupId>com.github.xiaoymin</groupId>
-            <artifactId>knife4j-openapi3-jakarta-spring-boot-starter</artifactId>
-            <version>4.4.0</version> <!-- 适配 Spring Boot 3.3+ -->
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.github.xiaoymin</groupId>-->
+<!--            <artifactId>knife4j-openapi3-jakarta-spring-boot-starter</artifactId>-->
+<!--            <version>4.4.0</version> &lt;!&ndash; 适配 Spring Boot 3.3+ &ndash;&gt;-->
+<!--        </dependency>-->
+
     </dependencies>
 
     <build>

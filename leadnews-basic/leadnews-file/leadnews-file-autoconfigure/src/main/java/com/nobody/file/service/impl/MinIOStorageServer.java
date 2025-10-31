@@ -19,7 +19,7 @@ public class MinIOStorageServer implements MinIOStorageService {
 
         this.minioClient = MinioClient.builder()
                 .credentials(minioProperties.getAccessKey(), minioProperties.getSecretKey())
-                .endpoint(minioProperties.getBucket())
+                .endpoint(minioProperties.getServerLocal())
                 .build();
     }
 

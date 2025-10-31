@@ -1,0 +1,5 @@
+minio:
+  access-key: minio
+  secret-key: minio
+  bucket : leadnews
+  server-local: http://10.141.92.90:9000

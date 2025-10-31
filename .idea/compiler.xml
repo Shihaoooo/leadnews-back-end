@@ -15,80 +15,19 @@
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
         </processorPath>
-        <module name="leadnews-file-autoconfigure" />
-        <module name="leadnews-user (1)" />
-        <module name="leadnews-article" />
-        <module name="leadnews-file-starter" />
-      </profile>
-      <profile name="Annotation profile for leadnews-common" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
-        </processorPath>
+        <module name="leadnews-gateway-wemedia" />
         <module name="leadnews-common" />
-      </profile>
-      <profile name="Annotation profile for leadnews-feign-api" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
-        </processorPath>
-        <module name="leadnews-feign-api" />
-      </profile>
-      <profile name="Annotation profile for leadnews-gateway" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
-        </processorPath>
-        <module name="leadnews-gateway" />
-      </profile>
-      <profile name="Annotation profile for leadnews-model" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
-        </processorPath>
         <module name="leadnews-model" />
-      </profile>
-      <profile name="Annotation profile for leadnews-user" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
-        </processorPath>
+        <module name="leadnews-file-autoconfigure" />
+        <module name="leadnews-article" />
         <module name="leadnews-user" />
-      </profile>
-      <profile name="Annotation profile for leadnews-test" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
-        </processorPath>
-        <module name="leadnews-test" />
-      </profile>
-      <profile name="Annotation profile for leadnews-utils" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
-        </processorPath>
+        <module name="leadnews-user (1)" />
+        <module name="leadnews-feign-api" />
+        <module name="leadnews-gateway-app" />
+        <module name="leadnews-file-starter" />
         <module name="leadnews-utils" />
+        <module name="leadnews-test" />
+        <module name="leadnews-wemedia" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -107,12 +46,15 @@
       <module name="leadnews-file-autoconfigure" options="-parameters" />
       <module name="leadnews-file-starter" options="-parameters" />
       <module name="leadnews-gateway" options="-parameters" />
+      <module name="leadnews-gateway-app" options="-parameters" />
+      <module name="leadnews-gateway-wemedia" options="-parameters" />
       <module name="leadnews-model" options="-parameters" />
       <module name="leadnews-service" options="-parameters" />
       <module name="leadnews-test" options="-parameters" />
       <module name="leadnews-user" options="-parameters" />
       <module name="leadnews-user (1)" options="-parameters" />
       <module name="leadnews-utils" options="-parameters" />
+      <module name="leadnews-wemedia" options="-parameters" />
     </option>
   </component>
 </project>
