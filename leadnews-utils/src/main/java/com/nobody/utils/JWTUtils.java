@@ -11,9 +11,10 @@ public class JWTUtils {
 
     private final String secretKey = "bGVhZG5ld3M="; // leadnews
 
-    private final Date expire = new Date(3600000);
-
     public String generateToken(String id) {
+        Date expire = new Date(System.currentTimeMillis() + 24 * 60 * 60 * 1000); // 24小时后过期
+
+
         return Jwts.builder()
                 .setId(UUID.randomUUID().toString())
                 .signWith(SignatureAlgorithm.HS256,secretKey)
@@ -23,6 +24,8 @@ public class JWTUtils {
     }
 
     public String generateToken(Long id) {
+        Date expire = new Date(System.currentTimeMillis() + 24 * 60 * 60 * 1000); // 24小时后过期
+
         return Jwts.builder()
                 .setId(UUID.randomUUID().toString())
                 .signWith(SignatureAlgorithm.HS256,secretKey)
@@ -44,9 +47,14 @@ public class JWTUtils {
                 .setSigningKey(secretKey) // 指定令牌密钥
                 .parseClaimsJws(token) // 解析token数据
                 .getBody();
-        }catch (Exception e){
-            // 打印异常信息
-            throw new Exception("令牌解析失败");
+        }catch (ExpiredJwtException e) {
+            throw new Exception("令牌已过期", e); // 明确是过期错误
+        } catch (SignatureException e) {
+            throw new Exception("令牌签名错误", e); // 签名不匹配
+        } catch (MalformedJwtException e) {
+            throw new Exception("令牌格式错误", e); // token格式不对
+        } catch (Exception e) {
+            throw new Exception("令牌解析失败", e); // 其他错误
         }
     }
 
@@ -67,19 +75,20 @@ public class JWTUtils {
      * 是否过期
      *
      * @param claims
-     * @return -1：有效，0：有效，1：过期，2：过期
+     * @return -1 无有效 1 有效
      */
-    public int verifyToken(Claims claims) throws Exception {
+    public int verifyToken(Claims claims) {
         if (claims == null) {
-            return 1;
+            return -1; // 无效（无claims）
         }
-
-        claims.getExpiration().before(new Date());
-        // 需要自动刷新TOKEN
-        if ((claims.getExpiration().getTime() - System.currentTimeMillis()) > expire.getTime()) {
-            return -1;
+        Date expireDate = claims.getExpiration();
+        Date now = new Date();
+        // 过期时间在当前时间之后：有效
+        if (expireDate.after(now)) {
+            return 1;
         } else {
-            return 0;
+            // 过期时间在当前时间之前：已过期
+            return -1;
         }
     }
 

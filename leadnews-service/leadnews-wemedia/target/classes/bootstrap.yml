@@ -13,3 +13,26 @@ spring:
         username: nacos
         password: nacos
         file-extension: yaml
+# 开启Feign熔断（OpenFeign 4.x中此配置项不变）
+feign:
+  circuitbreaker:
+    enabled: true # 默认为false，必须手动开启
+
+# Resilience4j 熔断配置（Resilience4j 2.x 兼容大部分旧配置）
+resilience4j:
+  circuitbreaker:
+    instances:
+      # 需与@FeignClient的name属性一致（如"user-service"）
+      leadnews-article:
+        failureRateThreshold: 50 # 失败率阈值（%），超过则触发熔断
+        waitDurationInOpenState: 10s # 熔断开启后，等待10秒进入半开状态（支持单位s/ms）
+        slidingWindowSize: 10 # 统计窗口内的请求数（最近10次）
+        slidingWindowType: COUNT_BASED # 窗口类型：COUNT_BASED（计数）/TIME_BASED（时间）
+        permittedNumberOfCallsInHalfOpenState: 3 # 半开状态允许的试探请求数
+        registerHealthIndicator: true # 注册健康指标（可选，用于监控）
+
+  # 可选：配置超时时间（结合Resilience4j的TimeLimiter）
+  timelimiter:
+    instances:
+      user-service:
+        timeoutDuration: 2s # 超时时间（超过则触发降级）

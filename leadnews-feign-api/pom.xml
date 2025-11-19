@@ -35,7 +35,21 @@
             <artifactId>leadnews-common</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+
+        <!-- Resilience4j 适配Spring Boot 3.x的熔断依赖 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-circuitbreaker-resilience4j</artifactId>
+            <version>3.1.4</version> <!-- 对应Spring Cloud 2022.0.x版本 -->
+        </dependency>
     </dependencies>
+
+
 
     <build>
         <plugins>

@@ -8,11 +8,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
-@RequiredArgsConstructor
-@Component
-public class wemTokenInteceptor implements HandlerInterceptor {
-
-    final private ThreadLocalUtils<Object> threadLocalUtils;
+public class WmTokenInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
@@ -21,7 +17,7 @@ public class wemTokenInteceptor implements HandlerInterceptor {
         String userID = request.getHeader("userID");
 
         if (userID != null && !userID.isEmpty()){
-            threadLocalUtils.set(userID);
+            ThreadLocalUtils.set(userID);
         }
 
         return true;
@@ -30,6 +26,6 @@ public class wemTokenInteceptor implements HandlerInterceptor {
     @Override
     public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) throws Exception {
         // 清理当前线程中的数据
-        threadLocalUtils.remove();
+        ThreadLocalUtils.remove();
     }
 }

@@ -1,18 +1,18 @@
 package com.nobody.utils;
 
-public class ThreadLocalUtils <T> {
+public class ThreadLocalUtils {
 
-    ThreadLocal<T> threadLocal = new ThreadLocal<>();
+    private static final ThreadLocal<Integer> threadLocal = new ThreadLocal<>();
 
-    public void set( T value){
-        threadLocal.set(value);
+    public static void set(Object value){
+        threadLocal.set((Integer) value);
     }
 
-    public T get(){
+    public static Integer get(){
         return threadLocal.get();
     }
 
-    public void remove(){
+    public static void remove(){
         threadLocal.remove();
     }
 }

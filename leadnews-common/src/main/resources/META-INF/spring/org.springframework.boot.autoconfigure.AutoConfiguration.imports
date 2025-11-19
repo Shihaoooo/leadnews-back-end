@@ -1,2 +1,3 @@
 com.nobody.common.swagger.SwaggerConfiguration
 com.nobody.common.Exception.ExceptionCatch
+com.nobody.common.aliyun.utils.GreenConfiguration

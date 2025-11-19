@@ -1,8 +1,12 @@
 package com.nobody.wemedia.service.impl;
 
+import com.github.pagehelper.Page;
+import com.github.pagehelper.PageHelper;
 import com.nobody.file.service.impl.MinIOStorageServer;
+import com.nobody.model.dtos.PageResult;
 import com.nobody.model.dtos.Result;
 import com.nobody.model.enums.AppHttpCodeEnum;
+import com.nobody.model.wemedia.dtos.WmMaterialDto;
 import com.nobody.model.wemedia.pojos.WmMaterial;
 import com.nobody.utils.ThreadLocalUtils;
 import com.nobody.wemedia.mapper.WmMaterialMapper;
@@ -24,9 +28,6 @@ public class WmMaterialServiceImpl implements WmMaterialService {
 
     // MinIO存储服务
     final private MinIOStorageServer minIOStorageServer;
-
-    // ThreadLocal操作工具类
-    final private ThreadLocalUtils<Object> threadLocalUtils;
 
     final private WmMaterialMapper wmMaterialMapper;
     @Override
@@ -55,7 +56,7 @@ public class WmMaterialServiceImpl implements WmMaterialService {
         // 3. 将图片路径上传到数据库中
          WmMaterial wmMaterial = new WmMaterial();
 
-        wmMaterial.setUserId(Integer.valueOf(threadLocalUtils.get().toString()));
+        wmMaterial.setUserId(Integer.valueOf(ThreadLocalUtils.get().toString()));
 
         wmMaterial.setUrl(fileId);
 
@@ -68,5 +69,29 @@ public class WmMaterialServiceImpl implements WmMaterialService {
         wmMaterialMapper.save(wmMaterial);
 
         return Result.success(AppHttpCodeEnum.SUCCESS);
+    }
+
+    @Override
+    public PageResult findList(WmMaterialDto wmMaterialDto) {
+        // 1. 检查参数
+        wmMaterialDto.checkParam();
+        // 2.分页查询
+
+        // 2.1 开启分页
+        PageHelper.startPage(wmMaterialDto.getCurrentPage(), wmMaterialDto.getSize());
+
+        // 2.2 执行查询(是否查询收藏素材，用户id)
+        if(wmMaterialDto.getIsCollection() == 1){
+            // 查询收藏素材
+            Page<WmMaterial> page = (Page<WmMaterial>) wmMaterialMapper.findCollectionList(ThreadLocalUtils.get().toString());
+
+            return new PageResult(page.getTotal(),page.getResult(), wmMaterialDto.getCurrentPage(),wmMaterialDto.getSize());
+        }
+        else{
+            // 查询全部素材
+            Page<WmMaterial> page = (Page<WmMaterial>) wmMaterialMapper.findList(ThreadLocalUtils.get().toString());
+
+            return new PageResult(page.getTotal(),page.getResult(),wmMaterialDto.getCurrentPage(),wmMaterialDto.getSize());
+        }
     }
 }

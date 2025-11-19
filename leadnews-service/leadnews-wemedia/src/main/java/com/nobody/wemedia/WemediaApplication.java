@@ -1,0 +1,16 @@
+package com.nobody.wemedia;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.openfeign.EnableFeignClients;
+import org.springframework.scheduling.annotation.EnableAsync;
+
+@SpringBootApplication
+@EnableAsync
+@EnableFeignClients(basePackages = "com.nobody.leadnewsfeignapi.article.apis")
+public class WemediaApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(WemediaApplication.class);
+    }
+}

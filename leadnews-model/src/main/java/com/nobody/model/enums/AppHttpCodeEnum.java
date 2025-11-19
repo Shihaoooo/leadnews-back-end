@@ -38,12 +38,12 @@ public enum AppHttpCodeEnum {
     // ---------- Getter 方法 ----------
     // ---------- 枚举属性 ----------
     @Getter
-    private int code;           // 错误码
+    private Integer code;           // 错误码
     private String errorMessage; // 错误描述
 
     // ---------- 构造方法 ----------
     // 枚举构造方法默认私有（也可省略 private，编译器会自动处理）
-    AppHttpCodeEnum(int code, String errorMessage) {
+    AppHttpCodeEnum(Integer code, String errorMessage) {
         this.code = code;
         this.errorMessage = errorMessage;
     }

@@ -6,8 +6,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
 @Schema(description = "APP发布文章配置表")
 public class ApArticleConfig {
 
@@ -18,14 +16,14 @@ public class ApArticleConfig {
     private Long articleId;
 
     @Schema(description = "是否可评论（0：不可评论；1：可评论）", example = "1")
-    private Integer isComment;
+    private Integer isComment = 1;
 
     @Schema(description = "是否可转发（0：不可转发；1：可转发）", example = "1")
-    private Integer isForward;
+    private Integer isForward = 1;
 
     @Schema(description = "是否下架（0：未下架；1：已下架）", example = "0")
-    private Integer isDown;
+    private Integer isDown = 0;
 
     @Schema(description = "是否已删除（0：未删除；1：已删除）", example = "0")
-    private Integer isDelete;
+    private Integer isDelete = 0;
 }

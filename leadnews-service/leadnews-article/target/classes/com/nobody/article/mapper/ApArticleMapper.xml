@@ -4,6 +4,87 @@
         "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.nobody.article.mapper.ApArticleMapper">
+    <insert id="save" parameterType="com.nobody.model.pojos.ApArticle">
+        INSERT INTO ap_article
+        <!-- 动态生成字段列表：仅包含非空字段 -->
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="title != null and title != ''">title,</if>
+            <if test="authorId != null">author_id,</if>
+            <if test="authorName != null and authorName != ''">author_name,</if>
+            <if test="channelId != null">channel_id,</if>
+            <if test="channelName != null and channelName != ''">channel_name,</if>
+            <if test="layout != null">layout,</if>
+            <if test="flag != null and flag != ''">flag,</if>
+            <if test="labels != null and labels != ''">labels,</if>
+            <if test="likeCount != null">`like`,</if> <!-- 数据库字段为like（关键字），用反引号转义 -->
+            <if test="collection != null">collection,</if>
+            <if test="comment != null">comment,</if>
+            <if test="readCount != null">read_count,</if>
+            <if test="provinceId != null">province_id,</if>
+            <if test="cityId != null">city_id,</if>
+            <if test="countyId != null">county_id,</if>
+            <if test="createdTime != null">created_time,</if>
+            <if test="publishTime != null">publish_time,</if>
+            <if test="syncStatus != null">sync_status,</if>
+            <if test="origin != null">origin,</if>
+            <if test="staticUrl != null and staticUrl != ''">static_url,</if>
+        </trim>
+        VALUES
+        <!-- 动态生成值列表：与字段列表一一对应 -->
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="title != null and title != ''">#{title},</if>
+            <if test="authorId != null">#{authorId},</if>
+            <if test="authorName != null and authorName != ''">#{authorName},</if>
+            <if test="channelId != null">#{channelId},</if>
+            <if test="channelName != null and channelName != ''">#{channelName},</if>
+            <if test="layout != null">#{layout},</if>
+            <if test="flag != null and flag != ''">#{flag},</if>
+            <if test="labels != null and labels != ''">#{labels},</if>
+            <if test="likeCount != null">#{likeCount},</if>
+            <if test="collection != null">#{collection},</if>
+            <if test="comment != null">#{comment},</if>
+            <if test="readCount != null">#{readCount},</if>
+            <if test="provinceId != null">#{provinceId},</if>
+            <if test="cityId != null">#{cityId},</if>
+            <if test="countyId != null">#{countyId},</if>
+            <if test="createdTime != null">#{createdTime},</if>
+            <if test="publishTime != null">#{publishTime},</if>
+            <if test="syncStatus != null">#{syncStatus},</if>
+            <if test="origin != null">#{origin},</if>
+            <if test="staticUrl != null and staticUrl != ''">#{staticUrl},</if>
+        </trim>
+    </insert>
+
+    <!-- 在同一个mapper文件中添加 -->
+    <update id="updateById" parameterType="com.nobody.model.pojos.ApArticle">
+        UPDATE ap_article
+        <!-- 动态生成SET子句：仅包含非空字段，用逗号分隔，自动去除末尾多余逗号 -->
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="title != null and title != ''">title = #{title},</if>
+            <if test="authorId != null">author_id = #{authorId},</if>
+            <if test="authorName != null and authorName != ''">author_name = #{authorName},</if>
+            <if test="channelId != null">channel_id = #{channelId},</if>
+            <if test="channelName != null and channelName != ''">channel_name = #{channelName},</if>
+            <if test="layout != null">layout = #{layout},</if>
+            <if test="flag != null and flag != ''">flag = #{flag},</if>
+            <if test="labels != null and labels != ''">labels = #{labels},</if>
+            <if test="likeCount != null">`like` = #{likeCount},</if> <!-- 处理关键字like -->
+            <if test="collection != null">collection = #{collection},</if>
+            <if test="comment != null">comment = #{comment},</if>
+            <if test="readCount != null">read_count = #{readCount},</if>
+            <if test="provinceId != null">province_id = #{provinceId},</if>
+            <if test="cityId != null">city_id = #{cityId},</if>
+            <if test="countyId != null">county_id = #{countyId},</if>
+            <if test="createdTime != null">created_time = #{createdTime},</if>
+            <if test="publishTime != null">publish_time = #{publishTime},</if>
+            <if test="syncStatus != null">sync_status = #{syncStatus},</if>
+            <if test="origin != null">origin = #{origin},</if>
+            <if test="staticUrl != null and staticUrl != ''">static_url = #{staticUrl},</if>
+        </trim>
+        <!-- 以id作为更新条件（必须非空，否则会更新全表，业务层需校验） -->
+        WHERE id = #{id}
+    </update>
+
     <select id="loadArticleList" resultType="com.nobody.model.pojos.ApArticle">
         select aa.* from ap_article.aa
         left join ap_article_config aac on aa.id == aac.article_id

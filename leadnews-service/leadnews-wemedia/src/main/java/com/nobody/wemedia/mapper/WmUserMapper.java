@@ -7,6 +7,9 @@ import org.apache.ibatis.annotations.Select;
 @Mapper
 public interface WmUserMapper {
 
-    @Select("select * from leadnews_wemedia.wm_user")
+    @Select("select * from leadnews_wemedia.wm_user where name=#{name} ")
     WmUser getOneByName(String name);
+
+    @Select("select name from leadnews_wemedia.wm_user where ap_user_id = #{userId}")
+    String selectById(Integer userId);
 }
