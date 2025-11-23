@@ -1,11 +1,11 @@
 package com.nobody.wemedia.mapper;
 
+import com.nobody.model.wemedia.dtos.WmNewsDto;
 import com.nobody.model.wemedia.dtos.WmNewsPageReqDto;
 import com.nobody.model.wemedia.pojos.WmNews;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
-import org.apache.ibatis.annotations.Update;
 
 
 import java.util.List;
@@ -21,11 +21,10 @@ public interface WmNewsMapper {
             "values (#{userId}, #{title}, #{content}, #{type}, #{channelId}, #{labels}, #{createdTime}, #{submitedTime},#{cover}, #{status}, #{publishTime}, #{reason}, #{articleId}, #{images},#{enable})")
     void save (WmNews wmNews);
 
-    // 修改自媒体文章
-    @Update("update leadnews_wemedia.wm_news set title = #{title}, content = #{content}, type = #{type}, channel_id = #{channelId}, labels = #{labels}, created_time = #{createdTime}, submited_time = #{submitedTime}, status = #{status}, publish_time = #{publishTime}, reason = #{reason}, article_id = #{articleId}, images = #{images} where id = #{id}")
-    void updateById(WmNews wmNews);
-
     // 根据id查询自媒体文章
     @Select("select * from leadnews_wemedia.wm_news where user_id = #{id}")
     WmNews selectById(Integer id);
+
+    // 万能更新方法
+    void updateById(WmNews wmNews);
 }

@@ -39,7 +39,7 @@ public class WmNews {
     private LocalDateTime createdTime;
 
     @Schema(description = "提交时间", example = "2025-11-02T14:30:00")
-    private LocalDateTime submitedTime;
+    private LocalDateTime submittedTime;
 
     @Schema(description = "封面")
     private String cover;
@@ -68,20 +68,20 @@ public class WmNews {
 
 
     public enum Status {
-        NORMAL((short) 0,"草稿"),
-        SUBMIT((short) 1,"未审核（已提交）"),
-        FAIL((short) 2,"审核未通过"),
-        ADMIN_AUTH((short) 3,"人工审核"),
-        ADMIN_SUCCESS((short) 4,"人工审核通过"),
-        SUCCESS((short) 8,"审核通过（待发布）"),
-        PUBLISHED((short) 9,"已发布");
+        NORMAL( 0,"草稿"),
+        SUBMIT(1,"未审核（已提交）"),
+        FAIL( 2,"审核未通过"),
+        ADMIN_AUTH( 3,"人工审核"),
+        ADMIN_SUCCESS( 4,"人工审核通过"),
+        SUCCESS( 8,"审核通过（待发布）"),
+        PUBLISHED( 9,"已发布");
 
-        Short code;
+        final Integer code;
 
-        Status(Short code, String msg){
+        Status(Integer code, String msg){
             this.code = code;
         }
-        public Short getCode(){
+        public Integer getCode(){
             return this.code;
         }
     }

@@ -28,10 +28,10 @@ public class MinIOStorageServer implements MinIOStorageService {
     private final MinioClient minioClient;
 
 
-    /*
-     * @Param prefix 文件前缀
+    /**
+     * @Param dirPath 前缀路径
      * @Param filename 文件名
-     * @Param inputSteam 文件流
+     *
      * @return 文件全路径
      *
      * */

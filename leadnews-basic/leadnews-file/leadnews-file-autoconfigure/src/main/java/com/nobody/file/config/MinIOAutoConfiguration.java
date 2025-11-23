@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@EnableConfigurationProperties
+@EnableConfigurationProperties(MinioProperties.class)
 public class MinIOAutoConfiguration {
 
     @Bean
@@ -20,10 +20,6 @@ public class MinIOAutoConfiguration {
 
     /*
     * 如果没有EnableConfigurationProperties注解，那么就要手动注入这个依赖类为Bean，那个注解可以自动注册Bean */
-    @Bean
-    public MinioProperties minioProperties(){
-        return new MinioProperties();
-    }
 
 
 }

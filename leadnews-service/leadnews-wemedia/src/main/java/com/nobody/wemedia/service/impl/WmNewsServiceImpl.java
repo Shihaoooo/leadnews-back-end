@@ -1,5 +1,6 @@
 package com.nobody.wemedia.service.impl;
 
+import com.alibaba.fastjson2.JSON;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.nobody.model.dtos.PageResult;
@@ -14,12 +15,15 @@ import com.nobody.wemedia.service.WmNewsAutoScanService;
 import com.nobody.wemedia.service.WmNewsService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Random;
 
 
@@ -32,6 +36,9 @@ public class WmNewsServiceImpl implements WmNewsService {
     final private WmNewsMapper wmNewsMapper;
 
     final private WmNewsAutoScanService wmNewsAutoScanService;
+
+    final private RabbitTemplate rabbitTemplate;
+
     // 查询所有文章
     @Override
     public PageResult findList(WmNewsPageReqDto dto) {
@@ -91,11 +98,12 @@ public class WmNewsServiceImpl implements WmNewsService {
         return Result.success(AppHttpCodeEnum.SUCCESS);
     }
 
+    // 保存或修改文章
     private void saveOrUpdateWmNews(WmNews wmNews) {
         // 补全属性
         wmNews.setUserId(ThreadLocalUtils.get());
         wmNews.setCreatedTime(LocalDateTime.now());
-        wmNews.setSubmitedTime(LocalDateTime.now());
+        wmNews.setSubmittedTime(LocalDateTime.now());
         wmNews.setEnable(1);  // 默认上架
 
         if (wmNews.getId() == null) {
@@ -107,5 +115,44 @@ public class WmNewsServiceImpl implements WmNewsService {
             wmNewsMapper.updateById(wmNews);
 
         }
+    }
+
+    @Override
+    public Result downOrUp(WmNewsDto dto) {
+        // 1.检查参数
+        if(dto.getId() == null){
+            return Result.error(AppHttpCodeEnum.PARAM_INVALID);
+        }
+
+        // 2.查询文章
+        WmNews wmNews = wmNewsMapper.selectById(dto.getId());
+        if(wmNews == null){
+            return Result.error(AppHttpCodeEnum.DATA_NOT_EXIST);
+        }
+
+        // 3.判断文章是否已发布
+        if(!wmNews.getStatus().equals(WmNews.Status.PUBLISHED.getCode())){
+            // 3.1 未发布
+            return Result.error(AppHttpCodeEnum.PARAM_INVALID.getCode(),"当前文章不是发布文章,不能上下架");
+        }
+
+        // 4. 修改enable状态
+        if(dto.getEnable() != null && dto.getEnable() > -1 && dto.getEnable() < 2){
+            wmNews.setEnable(dto.getEnable());
+            wmNewsMapper.updateById(wmNews);
+
+            if (wmNews.getArticleId() != null){
+                // 发送消息，通知article修改文章配置
+                Map<String ,Object> map = new HashMap<>();
+                map.put("articleId",wmNews.getArticleId());
+                map.put("enable",wmNews.getEnable());
+                rabbitTemplate.convertAndSend("article_exchange","article.upordown", JSON.toJSONString(map));
+            }
+
+        }else{
+            return Result.error(AppHttpCodeEnum.PARAM_INVALID);
+        }
+
+        return Result.success(AppHttpCodeEnum.SUCCESS);
     }
 }

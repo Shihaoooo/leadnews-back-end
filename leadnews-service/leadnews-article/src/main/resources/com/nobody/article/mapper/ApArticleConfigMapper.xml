@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nobody.article.mapper.ApArticleConfigMapper">
+    <update id="update">
+        update leadnews_article.ap_article_config
+        <set>
+            <if test="articleId != null">
+                article_id = #{articleId},
+            </if>
+            <if test="isComment != null">
+                is_comment = #{isComment},
+            </if>
+            <if test="isForward != null">
+                is_forward = #{isForward},
+            </if>
+            <if test="isDown != null">
+                is_down = #{isDown},
+            </if>
+            <if test="isDelete != null">
+                is_delete = #{isDelete},
+            </if>
+        </set>
+        WHERE id = #{id} <!-- 主键条件，根据实际情况调整 -->
+
+
+    </update>
+</mapper>

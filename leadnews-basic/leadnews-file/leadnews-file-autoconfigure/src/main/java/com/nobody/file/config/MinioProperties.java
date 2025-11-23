@@ -16,4 +16,5 @@ public class MinioProperties implements Serializable {
     private String bucket;
 
     private String serverLocal;
+
 }

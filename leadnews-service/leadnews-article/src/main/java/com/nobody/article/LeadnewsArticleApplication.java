@@ -9,7 +9,6 @@ import org.springframework.scheduling.annotation.EnableAsync;
 
 @SpringBootApplication
 @EnableFeignClients
-@EnableConfigurationProperties(ApArticleServiceImpl.class)
 @EnableAsync
 public class LeadnewsArticleApplication {
     public static void main(String[] args) {

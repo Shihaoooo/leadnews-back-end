@@ -1,7 +1,7 @@
 package com.nobody.article.sevice.impl;
 
 import com.nobody.article.mapper.ApArticleMapper;
-import com.nobody.article.sevice.ApArticleService;
+import com.nobody.article.sevice.ArticleFreeMarkerService;
 import com.nobody.file.service.impl.MinIOStorageServer;
 import com.nobody.model.pojos.ApArticle;
 import freemarker.template.Configuration;
@@ -21,7 +21,7 @@ import java.util.Map;
 @Slf4j
 @Service
 @RequiredArgsConstructor
-public class ArticleFreeMarkerServiceImpl {
+public class ArticleFreeMarkerServiceImpl implements ArticleFreeMarkerService {
     /**
      *  生成静态文件上传到MinIO中
      * @param apArticle
@@ -32,9 +32,8 @@ public class ArticleFreeMarkerServiceImpl {
 
     private final MinIOStorageServer minIOStorageServer;
 
-    private final ApArticleMapper apArticleMapper;
-
     @Async
+    @Override
     public void buildApArticleToMinIO(ApArticle apArticle, String content) throws Exception {
         // 1. 参数检查
         if(StringUtils.isNotBlank(content)){
