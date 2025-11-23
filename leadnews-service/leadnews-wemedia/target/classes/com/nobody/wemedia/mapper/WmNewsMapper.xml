@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nobody.wemedia.mapper.WmNewsMapper">
+    <update id="updateById">
+        update leadnews_wemedia.wm_news
+        <set>
+            <if test="userId != null">
+                user_id = #{userId},
+            </if>
+            <if test="title != null and title != ''">
+                title = #{title},
+            </if>
+            <if test="content != null and content != ''">
+                content = #{content},
+            </if>
+            <if test="type != null">
+                type = #{type},
+            </if>
+            <if test="channel != null">
+                channel = #{channel},
+            </if>
+            <if test="labels != null and labels != ''">
+                labels = #{labels},
+            </if>
+            <if test="createdTime != null">
+                created_time = #{createdTime},
+            </if>
+            <if test="submittedTime != null">
+                submited_time = #{submittedTime},
+            </if>
+            <if test="status != null">
+                status = #{status},
+            </if>
+            <if test="publishTime != null">
+                publish_time = #{publishTime},
+            </if>
+            <if test="reason != null and reason != ''">
+                reason = #{reason},
+            </if>
+            <if test="articleId != null">
+                article_id = #{articleId},
+            </if>
+            <if test="images != null and images != ''">
+                images = #{images},
+            </if>
+            <if test="enable != null">
+                enable = #{enable},
+            </if>
+            <if test="cover != null and cover != ''">
+                cover = #{cover},
+            </if>
+        </set>
+        WHERE id = #{id}
+    </update>
+
+    <select id="findAll" resultType="com.nobody.model.wemedia.pojos.WmNews" >
+        select * from leadnews_wemedia.wm_news
+        <where>
+            <if test="status != null">and status = #{status}</if>
+            <if test="channelID !=null">and channel_id = #{channelID}</if>
+            <if test="keyWord != null">and title like concat('%',#{keyWord},'%')</if>
+            <if test="beginPubDate != null and endPubDate != null">
+                and publish_time between #{beginPubDate} and #{endPubDate}
+            </if>
+            <if test="userID != null">
+                and user_id = #{userID}
+            </if>
+        </where>
+        order by publish_time desc
+    </select>
+
+</mapper>

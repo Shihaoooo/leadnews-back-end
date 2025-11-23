@@ -1,0 +1,7 @@
+aliyun:
+  green:
+    endpoint: https://oss-cn-beijing.aliyuncs.com
+    bucket-name: your-bucket-name
+    region: cn-beijing
+    acces-key-id: your-access-key-id
+    access-key-secret: your-access-key-secret
