@@ -2,7 +2,6 @@ package com.nobody.article.controller;
 
 import com.nobody.article.sevice.ApArticleService;
 import com.nobody.common.constants.ArticleConstants;
-import com.nobody.file.service.impl.MinIOStorageServer;
 import com.nobody.model.dtos.ArticleDto;
 import com.nobody.model.dtos.ArticleHomeDto;
 import com.nobody.model.dtos.Result;
@@ -16,9 +15,6 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/article")
 @RequiredArgsConstructor
 public class ArticleController {
-
-    final private MinIOStorageServer minIOStorageServer;
-
     final private ApArticleService apArticleService;
 
 

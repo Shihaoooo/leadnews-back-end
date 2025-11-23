@@ -5,6 +5,7 @@ import com.nobody.article.mapper.ApArticleConfigMapper;
 import com.nobody.article.mapper.ApArticleContentMapper;
 import com.nobody.article.mapper.ApArticleMapper;
 import com.nobody.article.sevice.ApArticleService;
+import com.nobody.article.sevice.ArticleFreeMarkerService;
 import com.nobody.common.constants.ArticleConstants;
 import com.nobody.model.dtos.ArticleDto;
 import com.nobody.model.dtos.ArticleHomeDto;
@@ -36,7 +37,7 @@ public class ApArticleServiceImpl implements ApArticleService{
 
     final private SnowflakeUtils snowflakeUtils;
 
-    final private ArticleFreeMarkerServiceImpl articleFreeMarkerUtils;
+    final private ArticleFreeMarkerService articleFreeMarkerService;
 
     @Override
     public Result load(ArticleHomeDto dto, Short type) {
@@ -104,7 +105,7 @@ public class ApArticleServiceImpl implements ApArticleService{
         // 2.2 id存在
 
         // 2.3 生成静态文件（异步调用）
-        articleFreeMarkerUtils.buildApArticleToMinIO(apArticle,dto.getContent());
+        articleFreeMarkerService.buildApArticleToMinIO(apArticle,dto.getContent());
 
         // 修改文章
 

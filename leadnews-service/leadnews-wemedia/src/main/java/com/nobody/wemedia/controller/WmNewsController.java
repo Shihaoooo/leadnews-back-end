@@ -25,8 +25,14 @@ public class WmNewsController {
     }
 
     @PostMapping("/submit")
+    @Operation(summary = "自媒体文章提交接口")
     public Result submitNews(@RequestBody WmNewsDto dto) throws Exception {
         return wmNewsService.submitNews(dto);
+    }
+
+    @PostMapping("/down_or_up")
+    public Result downOrUp(@RequestBody WmNewsDto dto){
+        return wmNewsService.downOrUp(dto);
     }
 
 }

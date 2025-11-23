@@ -38,4 +38,7 @@ public class WmNewsDto {
 
     @Schema(description = "图片集合")
     private List<String> images;
+
+    @Schema(description = "上架或下架")
+    private Integer enable;
 }

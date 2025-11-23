@@ -48,7 +48,7 @@ public class WmNewsAutoScanServiceImpl implements WmNewsAutoScanService {
     @Override
     public void autoScanWmNews(Integer id) throws Exception {
         // 1.查询自媒体文章
-        WmNews wmNews = wmNewsMapper.selectById(id);
+        WmNews     wmNews = wmNewsMapper.selectById(id);
 
         /** 测试阶段无需审核 **/
 //        // 2.审核文本内容 （阿里云接口)

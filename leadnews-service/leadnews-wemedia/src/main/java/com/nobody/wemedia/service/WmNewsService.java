@@ -11,4 +11,7 @@ public interface WmNewsService {
     PageResult findList(WmNewsPageReqDto dto);
 
     Result submitNews(WmNewsDto dto) throws Exception;
+
+    // 文章上下架
+    Result downOrUp(WmNewsDto dto);
 }

@@ -17,9 +17,19 @@ spring:
         username: nacos
         password: nacos
         file-extension: yaml
+  rabbitmq:
+    listener:
+      simple:
+        prefetch: 1
+    host: localhost
+    port: 5672
+    virtual-host: /
+    username: admin
+    password: 123456
 
 snowflake:
   data-center-id: 1
   machine-id: 1
+
 
 
