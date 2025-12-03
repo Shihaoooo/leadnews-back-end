@@ -1,6 +1,5 @@
 package com.nobody.wemedia.service.impl;
 
-import com.alibaba.fastjson2.JSON;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.nobody.model.dtos.PageResult;
@@ -15,11 +14,6 @@ import com.nobody.wemedia.service.WmNewsAutoScanService;
 import com.nobody.wemedia.service.WmNewsService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.amqp.AmqpException;
-import org.springframework.amqp.core.Message;
-import org.springframework.amqp.core.MessageDeliveryMode;
-import org.springframework.amqp.core.MessagePostProcessor;
-import org.springframework.amqp.core.MessageProperties;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
@@ -154,6 +148,7 @@ public class WmNewsServiceImpl implements WmNewsService {
                 }else{
                     // 定时发布(rabbitmq的延时队列实现)
                     if(dto.getPublishTime().getTime() < new Date().getTime()){
+                        log.error("时间早于现在");
                         return Result.error(AppHttpCodeEnum.PARAM_INVALID.getCode(),"时间无效");
                     }
 
